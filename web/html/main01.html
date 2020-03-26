@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>마이샵3.0</title>
+
+    <link rel="stylesheet" href="/static/css/noto_sans.css"><!-- Web Fonts -->
+    <link rel="stylesheet" href="/static/css/accent_color01.css"><!-- Accent Color 01 ~ 06 -->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/header_type01.css"><!-- Header Type 01 ~ 03 -->
+    <link rel="stylesheet" href="/static/css/plugins.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div class="inner">
+            <div class="top_area">
+                <ul class="sns">
+                    <li class="ico_bookmark"><a href="#">즐겨찾기</a></li>
+                    <li class="ico_kakako"><a href="#">카카오톡</a></li>
+                    <li class="ico_facebook"><a href="#">페이스북</a></li>
+                    <li class="ico_blog"><a href="#">블로그</a></li>
+                    <li class="ico_insta"><a href="#">인스타그램</a></li>
+                    <li class="ico_youtube"><a href="#">유튜브</a></li>
+                </ul>
+
+                <ul class="top_ctrl">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="#">관리자</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+            </div>
+            <div class="btm_area">
+                <h1 class="logo"><a href="/"><img src="/static/images/common/logo_type01.png" alt="카매니저"></a></h1>
+
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">국산차</a></li>
+                        <li><a href="#">수입차</a></li>
+                        <li><a href="#">화물/트럭</a></li>
+                        <li><a href="#">내차팔기</a></li>
+                        <li><a href="#">내차사기</a></li>
+                        <li><a href="#">매매후기</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <div class="input_wrap">
+                        <input type="text" name="" id="" placeholder="모델명을 검색하세요">
+                    </div>
+                    <button type="button" class="btn_search"><span>검색</span></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Header -->
+
+    <div id="container">
+        <div id="contents">
+            <div class="visual_section bg_gray01">
+                <div class="inner">
+                    <img src="/static/images/bg/visual01.png" alt="꼼꼼하게 따져가면서 사자! 24시간 카매니저가 신속하게 도와드립니다.">
+                </div>
+            </div>
+
+            <div class="inner">
+                <p class="sentence">지금 원하시는 중고차를<br><strong class="emphasis">카매니저</strong>에서 실시간으로 만나보세요</p>
+
+                <div class="square_wrap">
+                    <ul>
+                        <li>
+                            <a href="#" class="bg01">
+                                <em>최고 매입가 보장</em>
+                                <p>고객님의 차량을 최고가로</p>
+
+                                <span>판매상담 바로가기</span>
+                                <span class="acc_color dim"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg02">
+                                <em>출고 전 확실한 점검</em>
+                                <p>1등급 정비사가 출고 전 점검</p>
+
+                                <span>판매상담 바로가기</span>
+                                <span class="acc_color dim"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg03">
+                                <em>부담없는 낮은 금리</em>
+                                <p>최저 연 3% 최대 60개월</p>
+
+                                <span>판매상담 바로가기</span>
+                                <span class="acc_color dim"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg04">
+                                <em>24시간 상담 진행</em>
+                                <p>365일 언제 어디서나 간편상담</p>
+
+                                <span>판매상담 바로가기</span>
+                                <span class="acc_color dim"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //Square_wrap -->
+
+                <div class="tit_wrap">
+                    <h2 class="title01">매물검색</h2>
+                </div>
+
+                <div class="tab_wrap type01" data-action="click">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="acc_color"><a href="#">모델별</a></li>
+                            <li><a href="#">예산별</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_con current">
+                        <div class="shadow_box">
+                            <div class="tab_wrap type02" data-action="click">
+                                <div class="tab_list">
+                                    <ul>
+                                        <li class="acc_color"><a href="#">국산차</a></li>
+                                        <li><a href="#">수입차</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab_con current">
+                                    <div class="form_wrap">
+                                        <button type="button" class="btn_select step01"><span>제조사</span></button>
+                                        <button type="button" class="btn_select step02"><span>모델</span></button>
+                                        <button type="button" class="btn_select step03"><span>세부모델</span></button>
+
+                                        <button type="button" class="acc_color btn_submit"><span>검색</span></button>
+                                    </div>
+                                    <!-- //Form_wrap -->
+
+                                    <div class="result_wrap">
+                                        <div class="result_inner step01">
+                                            <div class="tit_wrap">
+                                                <h3 class="title02">국산차</h3>
+                                            </div>
+
+                                            <ul class="manufacturer_list">
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_hyundai.png" alt="현대"></span><p>현대</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_kia.png" alt="기아"></span><p>기아</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_chevrolet.png" alt="쉐보레"></span><p>쉐보레</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_samsung.png" alt="르노삼성"></span><p>르노삼성</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_ssangyoung.png" alt="쌍용"></span><p>쌍용</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_genesis.png" alt="제네시스"></span><p>제네시스</p></a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="result_inner step02">
+                                            <div class="tit_wrap">
+                                                <h3 class="title02">현대</h3>
+                                            </div>
+                                            <ul class="table_col4">
+                                                <li><a href="#">갤로퍼</a></li>
+                                                <li><a href="#">그랜저</a></li>
+                                                <li><a href="#">그레이스</a></li>
+                                                <li><a href="#">넥쏘</a></li>
+                                                <li><a href="#">다이너스티</a></li>
+                                                <li><a href="#">베라쿠르즈</a></li>
+                                                <li><a href="#">베르나</a></li>
+                                                <li><a href="#">벨로스터</a></li>
+                                                <li><a href="#">소나타</a></li>
+                                                <li><a href="#">솔라티</a></li>
+                                                <li><a href="#">스쿠프</a></li>
+                                                <li><a href="#">스타렉스</a></li>
+                                                <li><a href="#">스텔라</a></li>
+                                                <li><a href="#">싼타모</a></li>
+                                                <li><a href="#">싼타페</a></li>
+                                                <li><a href="#">아반떼</a></li>
+                                                <li><a href="#">갤로퍼</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="result_inner step03">
+                                            <div class="tit_wrap">
+                                                <h3 class="title02">갤로퍼</h3>
+                                            </div>
+                                            <ul class="table_col4">
+                                                <li><a href="#">갤로퍼</a></li>
+                                                <li><a href="#">갤로퍼밴</a></li>
+                                                <li><a href="#">갤로퍼2</a></li>
+                                                <li><a href="#">갤로퍼2밴</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!-- //국산차 -->
+                                <div class="tab_con">
+                                    <div class="form_wrap">
+                                        <button type="button" class="btn_select step01"><span>제조사</span></button>
+                                        <button type="button" class="btn_select step02"><span>모델</span></button>
+                                        <button type="button" class="btn_select step03"><span>세부모델</span></button>
+
+                                        <button type="button" class="acc_color btn_submit"><span>검색</span></button>
+                                    </div>
+                                    <!-- //Form_wrap -->
+
+                                    <div class="result_wrap">
+                                        <div class="result_inner step01">
+                                            <div class="tit_wrap">
+                                                <h3 class="title02">수입차</h3>
+                                            </div>
+
+                                            <ul class="manufacturer_list">
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_benz.png" alt="벤츠"></span><p>벤츠</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_bmw.png" alt="BMW"></span><p>BMW</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_audi.png" alt="아우디"></span><p>아우디</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_vw.png" alt="폭스바겐"></span><p>폭스바겐</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_lexus.png" alt="렉서스"></span><p>렉서스</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_mini.png" alt="미니"></span><p>미니</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_infiniti.png" alt="인피니티"></span><p>인피니티</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_peugeot.png" alt="푸조"></span><p>푸조</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_honda.png" alt="혼다"></span><p>혼다</p></a></li>
+                                                <li><a href="#"><span><img src="/static/images/logo/logo_nissan.png" alt="닛산"></span><p>닛산</p></a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="result_inner step02">
+                                            <div class="tit_wrap">
+                                                <h3 class="title02">벤츠</h3>
+                                            </div>
+                                            <ul class="table_col4">
+                                                <li><a href="#">갤로퍼</a></li>
+                                                <li><a href="#">그랜저</a></li>
+                                                <li><a href="#">그레이스</a></li>
+                                                <li><a href="#">넥쏘</a></li>
+                                                <li><a href="#">다이너스티</a></li>
+                                                <li><a href="#">베라쿠르즈</a></li>
+                                                <li><a href="#">베르나</a></li>
+                                                <li><a href="#">벨로스터</a></li>
+                                                <li><a href="#">소나타</a></li>
+                                                <li><a href="#">솔라티</a></li>
+                                                <li><a href="#">스쿠프</a></li>
+                                                <li><a href="#">스타렉스</a></li>
+                                                <li><a href="#">스텔라</a></li>
+                                                <li><a href="#">싼타모</a></li>
+                                                <li><a href="#">싼타페</a></li>
+                                                <li><a href="#">아반떼</a></li>
+                                                <li><a href="#">갤로퍼</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="result_inner step03">
+                                            <div class="tit_wrap">
+                                                <h3 class="title02">갤로퍼</h3>
+                                            </div>
+                                            <ul class="table_col4">
+                                                <li><a href="#">갤로퍼</a></li>
+                                                <li><a href="#">갤로퍼밴</a></li>
+                                                <li><a href="#">갤로퍼2</a></li>
+                                                <li><a href="#">갤로퍼2밴</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //수입차 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //모델별 -->
+                    <div class="tab_con">
+                        <div class="shadow_box">
+                            <div class="tab_wrap type02" data-action="click">
+                                <div class="tab_list">
+                                    <ul>
+                                        <li class="acc_color"><a href="#">국산차</a></li>
+                                        <li><a href="#">수입차</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab_con current">
+                                    <div class="form_wrap align_c">
+                                        <div class="range_info_wrap">
+                                            <div class="range_info">
+                                                <label for="min_num">최소</label>
+                                                <div class="input_wrap acc_color">
+                                                    <input type="text" name="" id="min_num" class="range_from" value="0원">
+                                                </div>
+                                                <span>~</span>
+                                                <label for="max_num">최대</label>
+                                                <div class="input_wrap acc_color">
+                                                    <input type="text" name="" id="max_num" class="range_to" value="400만원">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="acc_color btn_submit"><span>검색</span></button>
+                                    </div>
+                                    <!-- //Form_wrap -->
+
+                                    <div class="result_wrap range_wrap">
+                                        <div class="range_value">
+                                            <span>100만원</span>
+                                            <span>500만원</span>
+                                            <span>1000만원</span>
+                                            <span>1500만원</span>
+                                            <span>2000만원</span>
+                                            <span>2500만원</span>
+                                            <span>3000만원</span>
+                                            <span>3500만원</span>
+                                            <span>4000만원이상</span>
+                                        </div>
+
+                                        <input type="text" class="js-range-slider" name="" value="" />
+                                    </div>
+                                </div>
+                                <div class="tab_con">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //예산별 -->
+                </div>
+                <!-- //Tab -->
+
+                <div class="shadow_box">
+                    <div class="tab_wrap type02" data-action="click">
+                        <div class="tab_list">
+                            <ul>
+                                <li class="acc_color"><a href="#">국산차</a></li>
+                                <li><a href="#">수입차</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_con current">
+                            <div class="form_wrap">
+                                <button type="button" class="btn_select"><span>제조사</span></button>
+                                <button type="button" class="btn_select"><span>가격대</span></button>
+
+                                <button type="button" class="acc_color btn_submit"><span>검색</span></button>
+                            </div>
+                            <!-- //Form_wrap -->
+                        </div> 
+                        <!-- //국산차 -->
+                        <div class="tab_con">
+                            <div class="form_wrap">
+                                <button type="button" class="btn_select"><span>제조사</span></button>
+                                <button type="button" class="btn_select"><span>가격대</span></button>
+
+                                <button type="button" class="acc_color btn_submit"><span>검색</span></button>
+                            </div>
+                            <!-- //Form_wrap -->
+                        </div>
+                        <!-- //수입차 -->
+                    </div>
+                </div>
+
+                <div class="banner_wrap">
+                    <a href="#"><img src="/static/images/banner/banner01.jpg" alt="자동차 구매 꼼꼼하게 따져보세요 카매니저는 자신있습니다!"></a>
+                </div>
+
+                <div class="tit_wrap">
+                    <h2 class="title01">국산추천차량</h2>
+                </div>
+
+                <!--
+                <div class="recom_wrap domestic">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0 GOLD 고급형</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span> <span>145,625km</span></p>
+                                            <p><span>휘발유</span> <span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="control_box">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-play-pause"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                -->
+
+                <div class="recom_wrap domestic">
+                    <div class="swiper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0 GOLD 고급형</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span> <span>145,625km</span></p>
+                                        <p><span>휘발유</span> <span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="control_box">
+                        <div class="swiper-play-pause"></div>
+                    </div>
+                    <div class="swiper-pagination type02"><span class="current"></span> / <span class="total"></span></div>
+                </div>
+
+                <div class="tit_wrap">
+                    <h2 class="title01">수입추천차량</h2>
+                </div>
+                <!--
+                <div class="recom_wrap import">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0 GOLD 고급형</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span><span>145,625km</span></p>
+                                            <p><span>휘발유</span><span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                    <div class="info">
+                                        <em>싼타페 2WD 2.0</em>
+                                        <div>
+                                            <p><span>2005</span> <span>145,625km</span></p>
+                                            <p><span>휘발유</span> <span>오토</span></p>
+                                        </div>
+                                        <p class="price"><span>280</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="control_box">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-play-pause"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                -->
+
+                <div class="recom_wrap import">
+                    <div class="swiper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0 GOLD 고급형</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span><span>145,625km</span></p>
+                                        <p><span>휘발유</span><span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_231x173.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>싼타페 2WD 2.0</em>
+                                    <div>
+                                        <p><span>2005</span> <span>145,625km</span></p>
+                                        <p><span>휘발유</span> <span>오토</span></p>
+                                    </div>
+                                    <p class="price"><span>280</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="control_box">
+                        <div class="swiper-play-pause"></div>
+                    </div>
+                    <div class="swiper-pagination type02"><span class="current"></span> / <span class="total"></span></div>
+                </div>
+
+                <div class="bg_gray02 mgt60">
+                    <div class="review_wrap">
+                        <div class="tit_wrap">
+                            <h2 class="title01">고객만족후기</h2>
+                            <p class="description">카매니저 중고차를 구매한 고객들의 이야기를 확인해보세요</p>
+                        </div>
+
+                        <div class="swiper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_280x220.jpg" alt=""></span>
+                                    <div class="con">
+                                        <em>정말 마음에 쏙 들어요~</em>
+                                        <p>이*성 고객님 - LF쏘나타</p>
+                                        <span class="date">2020.02.12</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_280x220.jpg" alt=""></span>
+                                    <div class="con">
+                                        <em>정말 마음에 쏙 들어요~</em>
+                                        <p>이*성 고객님 - LF쏘나타</p>
+                                        <span class="date">2020.02.12</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_280x220.jpg" alt=""></span>
+                                    <div class="con">
+                                        <em>정말 마음에 쏙 들어요~</em>
+                                        <p>이*성 고객님 - LF쏘나타</p>
+                                        <span class="date">2020.02.12</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_280x220.jpg" alt=""></span>
+                                    <div class="con">
+                                        <em>정말 마음에 쏙 들어요~</em>
+                                        <p>이*성 고객님 - LF쏘나타</p>
+                                        <span class="date">2020.02.12</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_280x220.jpg" alt=""></span>
+                                    <div class="con">
+                                        <em>정말 마음에 쏙 들어요~</em>
+                                        <p>이*성 고객님 - LF쏘나타</p>
+                                        <span class="date">2020.02.12</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="img"><img src="/static/images/temp/temp_280x220.jpg" alt=""></span>
+                                    <div class="con">
+                                        <em>정말 마음에 쏙 들어요~</em>
+                                        <p>이*성 고객님 - LF쏘나타</p>
+                                        <span class="date">2020.02.12</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- //inner -->
+        </div>
+        <!-- //Contents -->
+
+        <div id="left_side">
+            <img src="/static/images/common/kakao.png" alt="카카오톡 카매니저 24시간 친절상담 카카오톡 1:1 상담 상담문의 전화 02-123-1234 핸드폰 010-134-1234">
+        </div>
+        <!-- //Left Side -->
+
+        <div id="right_side">
+            <div class="r_article acc_color">
+                <p class="tit">실시간 빠른 상담</p>
+                <div class="radio_box">
+                    <div class="radio_wrap">
+                        <input type="radio" name="r_chk" id="r_chk01" checked="checked">
+                        <label for="r_chk01">판매</label>
+                    </div>
+                    <div class="radio_wrap">
+                        <input type="radio" name="r_chk" id="r_chk02">
+                        <label for="r_chk02">구매</label>
+                    </div>
+                </div>
+    
+                <div class="input_wrap">
+                    <input type="text" name="" id="" placeholder="차명">
+                </div>
+                <div class="input_wrap">
+                    <input type="text" name="" id="" placeholder="연락처">
+                </div>
+    
+                <div class="check_wrap">
+                    <input type="checkbox" name="" id="agree">
+                    <label for="agree">개인정보 사용 수집에 동의합니다.</label>
+                </div>
+                <p class="align_r"><button type="button"><span>전문보기</span></button></p>
+    
+                <div class="btn_box">
+                    <button type="button" class="btn_submit acc_color"><span>상담요청</span></button>
+                </div>
+            </div>
+            <!-- //실시간 빠른 상담 -->
+    
+            <div class="r_article acc_color">
+                <p class="tit">빠른 차량 검색</p>
+    
+                <div class="select_wrap">
+                    <select name="" id="">
+                        <option value="">제조사 선택</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <select name="" id="">
+                        <option value="">모델 선택</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <select name="" id="">
+                        <option value="">상세 모델 선택</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <select name="" id="">
+                        <option value="">등급 선택</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <select name="" id="">
+                        <option value="">세부 등급 선택</option>
+                    </select>
+                </div>
+    
+                <label for="car_num">차량번호 검색</label>
+                <div class="input_wrap">
+                    <input type="text" name="" id="car_num">
+                </div>
+    
+                <div class="btn_box">
+                    <button type="button" class="btn_submit acc_color"><span>검색요청</span></button>
+                </div>
+            </div>
+            <!-- //빠른 차량 검색 -->
+    
+            <div class="r_article square">
+                <p class="tit">최근 본 차량</p>
+    
+                <p class="item noitem">
+                    최근 본 차량이<br>없습니다.
+                </p>
+                <!--
+                <a href="#" class="item">item01</a>
+    
+                <a href="#" class="item">item01</a>
+                -->
+    
+                <a href="#" class="to_top" id="to_top">TOP</a>
+            </div>
+        </div>
+        <!-- //Right Side -->
+    </div>
+    <!-- //Container -->
+
+    <div id="footer">
+        <div class="inner">
+            <p class="footer_logo">
+                <img src="/static/images/common/footer_logo.png" alt="카매니저">
+            </p>
+
+            <div class="footer_info">
+                <p>사업자등록번호 : 103-521-54865</p>
+                <address>서울특별시 강남구 봉은사로 449 밤부타워 F9, 10</address>
+                <p>대표자 : 함석필&nbsp;&nbsp;&nbsp;대표번호 : 02-3474-6545</p>
+            </div>
+        </div>
+    </div>
+    <!-- //Footer -->
+</div>
+<!-- //Wrap -->
+</body>
+</html>

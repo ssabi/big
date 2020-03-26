@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile CodingList</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		html, body{height:100%;}
+		h1 {text-align: center;font-size: 22px;color: #fff;line-height: 40px;background: #323232}
+		table {width: 100%;border-collapse: collapse}
+		th {background: #f9f9f9;border: 1px solid #e2e2e2;padding: 4px;font-size: 14px}
+		td {font-size: 14px;border: 1px solid #e2e2e2;padding: 4px 6px;font-size: 13px;width: calc(100% / 6);}
+		.disabled th, .disabled td{text-decoration:line-through;color:#999;}
+		.disabled th a, .disabled td a{color:#999;}
+		a {color: #003eb1}
+		a:hover {text-decoration: underline}
+		tr.line td {border-bottom: 2px solid #e2e2e2}
+		tr:nth-child(even) {background: #fefefe}
+		.mod {color: #ff4040}
+		td.com {color: #4068ff}
+		td.division {padding: 0;}
+		tr:hover {background: rgba(255, 255, 0, .1);}
+		tr.check td {background: rgba(255, 0, 0, .1);}
+		tr.check-2 td {background: rgba(255, 172, 0, 0.1);}
+	</style>
+</head>
+
+<body>
+	<h1 id="docTit">MyShop Mobile CodingList</h1>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">MENU</th>
+				<th scope="col">2Depth</th>
+				<th scope="col">3Depth</th>
+				<th scope="col">File</th>
+				<th scope="col">완료일</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Main</td>
+				<td></td>
+				<td></td>
+				<td><a href="index.html" target="_blank">/index.html</a></td>
+				<td class="mod"></td>
+				<td></td>
+			</tr>
+			<tr class="disabled">
+				<td>검색</td>
+				<td>제조사</td>
+				<td></td>
+				<td><a href="search_manufacturer.html" target="_blank">/search_manufacturer.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr class="disabled">
+				<td></td>
+				<td>차종</td>
+				<td></td>
+				<td><a href="search_vihicle.html" target="_blank">/search_vihicle.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr class="disabled">
+				<td></td>
+				<td>가격대</td>
+				<td></td>
+				<td><a href="search_price.html" target="_blank">/search_price.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr class="disabled">
+				<td></td>
+				<td>검색 step01</td>
+				<td></td>
+				<td><a href="search_step01.html" target="_blank">/search_step01.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr class="disabled">
+				<td></td>
+				<td>검색 step02</td>
+				<td></td>
+				<td><a href="search_step02.html" target="_blank">/search_step02.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr class="disabled">
+				<td></td>
+				<td>검색 결과</td>
+				<td></td>
+				<td><a href="search_list.html" target="_blank">/search_list.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td><a href="detail_view.html" target="_blank">/detail_view.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>고객상담</td>
+				<td>구매상담</td>
+				<td></td>
+				<td><a href="customer_purchase.html" target="_blank">/customer_purchase.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>판매상담</td>
+				<td></td>
+				<td><a href="customer_sale.html" target="_blank">/customer_sale.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>할부문의</td>
+				<td></td>
+				<td><a href="customer_instalment.html" target="_blank">/customer_instalment.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상담내역</td>
+				<td></td>
+				<td><a href="customer_history.html" target="_blank">/customer_history.html</a></td>
+				<td class="com"></td>
+				<td></td>
+            </tr>
+			<tr>
+				<td>커뮤니티</td>
+				<td>게시판</td>
+				<td></td>
+				<td><a href="community_board.html" target="_blank">/community_board.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>매매후기</td>
+				<td></td>
+				<td><a href="community_review.html" target="_blank">/community_review.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>오시는길</td>
+				<td></td>
+				<td><a href="community_location.html" target="_blank">/community_location.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>회사소개</td>
+				<td></td>
+				<td><a href="community_about.html" target="_blank">/community_about.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="6" style="color:red;text-align:center;">03.10 추가</td>
+			</tr>
+			<tr>
+				<td>검색 NEW</td>
+				<td>제조사</td>
+				<td>Step01</td>
+				<td><a href="new_search_step01_m.html" target="_blank">/new_search_step01_m.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>제조사</td>
+				<td>Step02</td>
+				<td><a href="new_search_step02_m.html" target="_blank">/new_search_step02_m.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>제조사</td>
+				<td>Step03</td>
+				<td><a href="new_search_step03_m.html" target="_blank">/new_search_step03_m.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>테마</td>
+				<td>Step01</td>
+				<td><a href="new_search_step01_t.html" target="_blank">/new_search_step01_t.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>가격대</td>
+				<td>Step01</td>
+				<td><a href="new_search_step01_p.html" target="_blank">/new_search_step01_p.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>가격대</td>
+				<td>Step02</td>
+				<td><a href="new_search_step02_p.html" target="_blank">/new_search_step02_p.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>검색결과</td>
+				<td>이미지/리스트뷰</td>
+				<td><a href="new_search_result.html" target="_blank">/new_search_result.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상세검색</td>
+				<td></td>
+				<td><a href="new_search_detail.html" target="_blank">/new_search_detail.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>검색결과</td>
+				<td><a href="new_search_detail_result.html" target="_blank">/new_search_detail_result.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>화물/버스 검색</td>
+				<td>Step01</td>
+				<td><a href="new_search_cb_step01.html" target="_blank">/new_search_cb_step01.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Step02</td>
+				<td><a href="new_search_cb_step02.html" target="_blank">/new_search_cb_step02.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Step03</td>
+				<td><a href="new_search_cb_step03.html" target="_blank">/new_search_cb_step03.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Step04</td>
+				<td><a href="new_search_cb_step04.html" target="_blank">/new_search_cb_step04.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Step05</td>
+				<td><a href="new_search_cb_step05.html" target="_blank">/new_search_cb_step05.html</a></td>
+				<td class="com"></td>
+				<td></td>
+			</tr>
+			
+		</tbody>
+	</table>
+</body>
+
+</html>

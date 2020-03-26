@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="opt_wrap">
+                <div class="ow_top">
+                    <h2 class="tit_type01">가격대</h2>
+
+                    <div class="sch_part">
+                        <select name="" id="">
+                            <option value="">검색분류</option>
+                            <option value="">제조사</option>
+                            <option value="">차종</option>
+                            <option value="">가격대</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Option Area -->
+
+            <div class="sch_opt_box">
+                <div class="p_area">
+                    <div class="bg_transparent">
+                        <ul class="category column4">
+                            <li><a href="#">0~200만원</a></li>
+                            <li><a href="#">200~<br>500만원</a></li>
+                            <li><a href="#">500~<br>800만원</a></li>
+                            <li><a href="#">800~<br>1000만원</a></li>
+                            <li><a href="#">1000~<br>1500만원</a></li>
+                            <li><a href="#">1500~<br>2000만원</a></li>
+                            <li><a href="#">2000~<br>3000만원</a></li>
+                            <li><a href="#">3000만원<br>이상</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="form_box">
+                        <label for="first">직접 입력</label>
+                        <div>
+                            <input type="text" name="" id="first" class="" vlaue="">
+                            <span class="sep">~</span>
+                            <input type="text" name="" id="second" class="" vlaue="">
+                            <button type="button"><span>검색</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model_box">
+                    <div class="car_swiper_area">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car06.png" alt=""></span>
+                                            <p class="cate_price">0~<br>200만원</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car07.png" alt=""></span>
+                                            <p class="cate_price">200~<br>500만원</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car08.png" alt=""></span>
+                                            <p class="cate_price">500~<br>800만원</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car09.png" alt=""></span>
+                                            <p class="cate_price">800~<br>1000만원</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car10.png" alt=""></span>
+                                            <p class="cate_price">1000~<br>1500만원</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Container -->
+</div>
+</body>
+</html>

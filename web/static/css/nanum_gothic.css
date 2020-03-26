@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* WebFont */
+@font-face{
+    font-family:'NanumGothic';
+    font-weight:400;
+    src:url(/static/fonts/NanumGothic.woff2) format('woff2'),
+        url(/static/fonts/NanumGothic.woff) format('woff'),
+        url(/static/fonts/NanumGothic.otf) format('opentype');
+}
+@font-face{
+    font-family:'NanumGothic';
+    font-weight:700;
+    src:url(/static/fonts/NanumGothicBold.woff2) format('woff2'),
+        url(/static/fonts/NanumGothicBold.woff) format('woff'),
+        url(/static/fonts/NanumGothicBold.otf) format('opentype');
+}
+@font-face{
+    font-family:'NanumGothic';
+    font-weight:800;
+    src:url(/static/fonts/NanumGothicExtraBold.woff2) format('woff2'),
+        url(/static/fonts/NanumGothicExtraBold.woff) format('woff'),
+        url(/static/fonts/NanumGothicExtraBold.otf) format('opentype');
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="opt_wrap">
+                <div class="ow_top">
+                    <h2 class="tit_type01">차종</h2>
+
+                    <div class="sch_part">
+                        <select name="" id="">
+                            <option value="">검색분류</option>
+                            <option value="">제조사</option>
+                            <option value="">차종</option>
+                            <option value="">가격대</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Option Area -->
+
+            <div class="sch_opt_box">
+                <div class="sch_chk_list">
+                    <div class="sch_chk_box">
+                        <span>현대<a href="#"><i></i><span>삭제</span></a></span>
+                        <span>벤츠<a href="#"><i></i><span>삭제</span></a></span>
+                        <span>BMW<a href="#"><i></i><span>삭제</span></a></span>
+                    </div>
+                    <p class="sch_chk_tit">선택한 제조사 전체 검색</p>
+
+                    <div class="accordion_wrap">
+                        <div class="accord_item open">
+                            <div class="ac_tit">
+                                <a href="#" role="button">경차</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt01_01"><label for="opt01_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt01_02"><label for="opt01_02">모닝</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt01_03"><label for="opt01_03">마티즈</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt01_04"><label for="opt01_04">스파크</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                        <div class="accord_item">
+                            <div class="ac_tit">
+                                <a href="#" role="button">소형차</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt02_01"><label for="opt02_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt02_02"><label for="opt02_02">소형차1</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt02_03"><label for="opt02_03">소형차2</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt02_04"><label for="opt02_04">소형차3</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                        <div class="accord_item">
+                            <div class="ac_tit">
+                                <a href="#" role="button">준중형</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt03_01"><label for="opt03_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt03_02"><label for="opt03_02">준중형1</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt03_03"><label for="opt03_03">준중형2</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt03_04"><label for="opt03_04">준중형3</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                        <div class="accord_item">
+                            <div class="ac_tit">
+                                <a href="#" role="button">중형</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt04_01"><label for="opt04_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt04_02"><label for="opt04_02">중형1<label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt04_03"><label for="opt04_03">중형2</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt04_04"><label for="opt04_04">중형3</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                        <div class="accord_item">
+                            <div class="ac_tit">
+                                <a href="#" role="button">대형</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt05_01"><label for="opt05_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt05_02"><label for="opt05_02">대형1</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt05_03"><label for="opt05_03">대형2</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt05_04"><label for="opt05_04">대형3</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                        <div class="accord_item">
+                            <div class="ac_tit">
+                                <a href="#" role="button">RV / SUV</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt06_01"><label for="opt6_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt6_02"><label for="opt6_02">RV / SUV1</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt6_03"><label for="opt6_03">RV / SUV2</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt6_04"><label for="opt6_04">RV / SUV3</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                        <div class="accord_item">
+                            <div class="ac_tit">
+                                <a href="#" role="button">스포츠카</a>
+                            </div>
+                            <div class="ac_con">
+                                <div class="ac_con_inner">
+
+                                    <div class="chkbox_wrap">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt07_01"><label for="opt07_01">전체검색</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt07_02"><label for="opt07_02">스포츠카1</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt07_03"><label for="opt07_03">스포츠카2</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="opt07_04"><label for="opt07_04">스포츠카3</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //item -->
+                    </div>
+                </div>
+
+                <div class="btn_box">
+                    <a href="#" class="btn_select"><span>선택 차량 검색</span></a>
+                </div>
+
+                <div class="model_box">
+                    <!-- 
+                    <div class="bg_gray">
+                        <h2 class="tit_type03">선택 차량 검색</h2>
+                    </div>
+                     -->
+
+                    <div class="car_swiper_area">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car01.png" alt=""></span>
+                                            <p class="cate_name">경차</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car02.png" alt=""></span>
+                                            <p class="cate_name">소형</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car03.png" alt=""></span>
+                                            <p class="cate_name">중형</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car04.png" alt=""></span>
+                                            <p class="cate_name">준중형</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cate_item">
+                                            <span class="img"><img src="/static/images/temp/car05.png" alt=""></span>
+                                            <p class="cate_name">대형</p>
+                                            <p class="unit">(<span>1,234</span>대)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Container -->
+</div>
+</body>
+</html>

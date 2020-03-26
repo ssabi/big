@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>마이샵3.0</title>
+
+    <link rel="stylesheet" href="/static/css/nanum_gothic.css"><!-- Web Fonts -->
+    <link rel="stylesheet" href="/static/css/accent_color01.css"><!-- Accent Color 01 ~ 06 -->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/header_type02.css"><!-- Header Type 01 ~ 03 -->
+    <link rel="stylesheet" href="/static/css/plugins.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div class="inner">
+            <div class="top_area">
+                <ul class="top_ctrl">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="#">관리자 로그인</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+            </div>
+            <div class="btm_area">
+                <h1 class="logo"><a href="/"><img src="/static/images/common/logo_type02.png" alt="카매니저"></a></h1>
+
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">국산차</a></li>
+                        <li><a href="#">수입차</a></li>
+                        <li><a href="#">화물차</a></li>
+                        <li><a href="#">내차팔기 &middot; 구입상담</a></li>
+                        <li><a href="#">고객만족후기</a></li>
+                        <li><a href="#">마이샵소개</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Header -->
+
+    <div id="container">
+        <div id="contents">
+            <div class="visual_section bg_color01">
+                <img src="/static/images/bg/visual02.png" alt="카매니저에서 꼭 맞춤 금융상품으로 중고차 부담없이 구매하세요. 현금이 없어도 중고차 전액할부 가능!">
+            </div>
+
+            <div class="inner">
+                <div class="tab_wrap type03 pdt45" data-action="click">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="acc_color"><a href="#">원하는 모델이 있어요</a></li>
+                            <li><a href="#">예산이 정해져 있어요</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_con current">
+                        <div class="round_box">
+                            <div class="tab_wrap type03 small" data-action="click">
+                                <div class="tab_list">
+                                    <ul>
+                                        <li class="acc_color"><a href="#">국산차</a></li>
+                                        <li><a href="#">수입차</a></li>
+                                    </ul>
+
+                                    <div class="search_form">
+                                        <div class="input_wrap">
+                                            <input type="text" name="" id="" placeholder="차량번호, 차량명을 입력하세요.">
+                                        </div>
+                                        <button type="button"><span>검색</span></button>
+                                    </div>
+                                </div>
+                                <div class="tab_con current">
+                                    <div class="form_wrap">
+                                        <button type="button" class="btn_select"><span>제조사</span></button>
+                                        <button type="button" class="btn_select"><span>모델</span></button>
+                                        <button type="button" class="btn_select"><span>세부모델</span></button>
+        
+                                        <button type="button" class="acc_color btn_submit"><span>검색하기</span></button>
+                                    </div>
+                                    <!-- //Form_wrap -->
+                                </div>
+                                <div class="tab_con">
+                                    <div class="form_wrap">
+                                        <button type="button" class="btn_select"><span>제조사</span></button>
+                                        <button type="button" class="btn_select"><span>모델</span></button>
+                                        <button type="button" class="btn_select"><span>세부모델</span></button>
+        
+                                        <button type="button" class="acc_color btn_submit"><span>검색하기</span></button>
+                                    </div>
+                                    <!-- //Form_wrap -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_con">
+                        <div class="round_box">
+
+                            <div class="range_static_wrap">
+                                <div class="range_chk_box">
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr01" checked="checked">
+                                        <label for="pr01"><span>0 ~ 200만원</span></label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr02">
+                                        <label for="pr02"><span>200 ~ 400만원</span></label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr03">
+                                        <label for="pr03"><span>400 ~ 600만원</span></label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr04">
+                                        <label for="pr04"><span>600 ~ 1000만원</span></label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr05">
+                                        <label for="pr05"><span>1000 ~ 1500만원</span></label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr06">
+                                        <label for="pr06"><span>1500 ~ 3000만원</span></label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="price_range" id="pr07">
+                                        <label for="pr07"><span>3000만원 이상 ~</span></label>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <span>0</span>
+                                    <span class="pos01">200</span>
+                                    <span class="pos02">400</span>
+                                    <span class="pos03">600</span>
+                                    <span class="pos04">1000</span>
+                                    <span class="pos05">1500</span>
+                                    <span class="pos06">3000</span>
+                                </div>
+                            </div>
+                            <!-- //Range Select -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box">
+                    <div>
+                        <div class="col col01">
+                            <a href="#"><img src="/static/images/banner/banner02.png" alt="차량판매상담 최저가 판매, 최고가 매입 직장인들을 위한 24시 상담 시스템"></a>
+                        </div>
+                        <div class="col col01">
+                            <a href="#"><img src="/static/images/banner/banner03.png" alt="차량구매상담 고객님의 추억이 담긴 소중한 차량 매입 전문 딜러가 진단해 드립니다."></a>
+                        </div>
+                        <div class="col col01">
+                            <a href="#"><img src="/static/images/banner/banner04.png" alt="차량할부상담 직장인, 무직자, 학생, 주부 전액할부 + 여유자금까지"></a>
+                        </div>
+                        <div class="col col01">
+                            <a href="#"><img src="/static/images/banner/banner05.png" alt="차량문자상담 직장인, 무직자, 학생, 주부 전액할부 + 여유자금까지"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_box">
+                    <div>
+                        <div class="col col2">
+                            <a href="#"><img src="/static/images/banner/banner06.png" alt="카매니저 마이샵 카카오톡 서비스 이제 카카오톡 상담으로 언제 어디서나 부담없이 카카오톡 상담하세요. 카카오톡 ID는 "></a>
+                        </div>
+                        <div class="col col01">
+                            <a href="#"><img src="/static/images/banner/banner07.png" alt="카매니저 마이샵 블로그를 만나보세요. 바로가기"></a>
+                        </div>
+                        <div class="col col01">
+                            <a href="#"><img src="/static/images/banner/banner08.png" alt="카매니저 마이샵 페이스북을 만나보세요. 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tit_wrap">
+                    <h2 class="title03"><span>카매니저 마이샵</span> 국산추천차량</h2>
+                </div>
+                <div class="recom_list_wrap">
+                    <div>
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //국산추천차량 -->
+
+                <div class="tit_wrap">
+                    <h2 class="title03"><span>카매니저 마이샵</span> 수입추천차량</h2>
+                </div>
+                <div class="recom_list_wrap">
+                    <div>
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                    <ul>
+                                        <li>2012년식</li>
+                                        <li>118,438km</li>
+                                        <li>경유</li>
+                                        <li>수동</li>
+                                    </ul>
+                                    <p class="price"><span>999,999</span>만원</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- //수입추천차량 -->
+
+                <div class="tit_wrap">
+                    <h2 class="title03"><span>카매니저 마이샵</span> 영상보기</h2>
+                </div>
+                <div class="recom_mov_wrap horizontal">
+                    <div class="left_side">
+                        <p class="title04">카매니저 마이샵 유튜브</p>
+                        <div class="mov">
+                            영상
+                        </div>
+                        <div class="mov_list">
+                            <div class="item">
+                                리스트1
+                            </div>
+                            <div class="item">
+                                리스트2
+                            </div>
+                            <div class="item">
+                                리스트3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <p class="title04">실시간 빠른상담</p>
+
+                        <div class="radio_box">
+                            <div class="radio_wrap">
+                                <input type="radio" name="quick_cons" id="qc01" checked="checked">
+                                <label for="qc01">판매</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" name="quick_cons" id="qc02">
+                                <label for="qc02">구매</label>
+                            </div>
+                        </div>
+
+                        <div class="input_wrap">
+                            <input type="text" name="" id="" placeholder="이름(필수)">
+                        </div>
+                        <div class="input_wrap">
+                            <input type="text" name="" id="" placeholder="연락처(필수)">
+                        </div>
+                        <div class="textarea_wrap">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="문의사항"></textarea>
+                        </div>
+
+                        <div class="check_wrap">
+                            <input type="checkbox" name="" id="agree1">
+                            <label for="agree1">수집하는 개인정보 항목, 수집 / 이용목적, 개인정보 보유기간에 동의합니다.</label>
+                        </div>
+                        <p class="align_r">
+                            <button type="button"><span>전문보기</span></button>
+                        </p>
+
+                        <button type="button" class="btn_submit"><span>상담요청</span></button>
+                    </div>
+                </div>
+
+                <div class="recom_mov_wrap vertical">
+                    <div class="left_side">
+                        <p class="title04">카매니저 마이샵 유튜브</p>
+                        <div class="mov">
+                            영상
+                        </div>
+                        <div class="mov_list">
+                            <div class="item">
+                                리스트1
+                            </div>
+                            <div class="item">
+                                리스트2
+                            </div>
+                            <div class="item">
+                                리스트3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <p class="title04">실시간 빠른상담</p>
+
+                        <div class="radio_box">
+                            <div class="radio_wrap">
+                                <input type="radio" name="quick_cons01" id="qc03" checked="checked">
+                                <label for="qc03">판매</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" name="quick_cons01" id="qc04">
+                                <label for="qc04">구매</label>
+                            </div>
+                        </div>
+
+                        <div class="input_wrap">
+                            <input type="text" name="" id="" placeholder="이름(필수)">
+                        </div>
+                        <div class="input_wrap">
+                            <input type="text" name="" id="" placeholder="연락처(필수)">
+                        </div>
+                        <div class="textarea_wrap">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="문의사항"></textarea>
+                        </div>
+
+                        <div class="check_wrap">
+                            <input type="checkbox" name="" id="agree2">
+                            <label for="agree2">수집하는 개인정보 항목, 수집 / 이용목적, 개인정보 보유기간에 동의합니다.</label>
+                        </div>
+                        <p class="align_r">
+                            <button type="button"><span>전문보기</span></button>
+                        </p>
+
+                        <button type="button" class="btn_submit"><span>상담요청</span></button>
+                    </div>
+                </div>
+                <!-- //영상보기 -->
+
+                <div class="tit_wrap">
+                    <h2 class="title03">카매니저 마이샵 <span>추천!</span></h2>
+                </div>
+
+                <div class="tab_wrap swiper_type" data-action="click">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="acc_color"><a href="#">중고차 시장 최고의 인기모델</a></li>
+                            <li><a href="#">중고차 시장 최고의 인기모델</a></li>
+                            <li><a href="#">중고차 시장 최고의 인기모델</a></li>
+                            <li><a href="#">중고차 시장 최고의 인기모델</a></li>
+                        </ul>
+                        <p class="description">현재 가장 많이 팔리는 차량을 모아봤습니다. 현재 가장 많이 팔리는 차량을 모아봤습니다.</p>
+                        <div class="tab_con_wrap">
+                            <div class="tab_con current">
+                                <div class="item_wrap type02">
+                                    <div class="item big">
+                                        <a href="#">
+                                            <span class="img"><img src="/static/images/temp/temp_294x230.jpg" alt=""></span>
+                                            <div class="info">
+                                                <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                <ul>
+                                                    <li>2015</li>
+                                                    <li>휘발유</li>
+                                                    <li>오토</li>
+                                                    <li>999,999km</li>
+                                                </ul>
+                                                <p class="price"><span>999,999</span>만원</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="btn_share"><img src="/static/images/icon/ico_share.png" alt=""></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span class="img"><img src="/static/images/temp/tmep_175x125.jpg" alt=""></span>
+                                                    <div class="info">
+                                                        <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                        <ul>
+                                                            <li>2015</li>
+                                                            <li>휘발유</li>
+                                                            <li>오토</li>
+                                                            <li>999,999km</li>
+                                                        </ul>
+                                                        <p class="price"><span>999,999</span>만원</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span class="img"><img src="/static/images/temp/tmep_175x125.jpg" alt=""></span>
+                                                    <div class="info">
+                                                        <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                        <ul>
+                                                            <li>2015</li>
+                                                            <li>휘발유</li>
+                                                            <li>오토</li>
+                                                            <li>999,999km</li>
+                                                        </ul>
+                                                        <p class="price"><span>999,999</span>만원</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span class="img"><img src="/static/images/temp/tmep_175x125.jpg" alt=""></span>
+                                                    <div class="info">
+                                                        <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                        <ul>
+                                                            <li>2015</li>
+                                                            <li>휘발유</li>
+                                                            <li>오토</li>
+                                                            <li>999,999km</li>
+                                                        </ul>
+                                                        <p class="price"><span>999,999</span>만원</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span class="img"><img src="/static/images/temp/tmep_175x125.jpg" alt=""></span>
+                                                    <div class="info">
+                                                        <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                        <ul>
+                                                            <li>2015</li>
+                                                            <li>휘발유</li>
+                                                            <li>오토</li>
+                                                            <li>999,999km</li>
+                                                        </ul>
+                                                        <p class="price"><span>999,999</span>만원</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span class="img"><img src="/static/images/temp/tmep_175x125.jpg" alt=""></span>
+                                                    <div class="info">
+                                                        <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                        <ul>
+                                                            <li>2015</li>
+                                                            <li>휘발유</li>
+                                                            <li>오토</li>
+                                                            <li>999,999km</li>
+                                                        </ul>
+                                                        <p class="price"><span>999,999</span>만원</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span class="img"><img src="/static/images/temp/tmep_175x125.jpg" alt=""></span>
+                                                    <div class="info">
+                                                        <em>현대 제네시스DH G330 모던 현대 제네시스DH G330 모던</em>
+                                                        <ul>
+                                                            <li>2015</li>
+                                                            <li>휘발유</li>
+                                                            <li>오토</li>
+                                                            <li>999,999km</li>
+                                                        </ul>
+                                                        <p class="price"><span>999,999</span>만원</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab_con">
+                                2
+                            </div>
+                            <div class="tab_con">
+                                3
+                            </div>
+                            <div class="tab_con">
+                                4
+                            </div>
+                        </div>
+
+                        <p class="align_c">
+                            <button type="button" class="btn_show_all"><span>전체보기</span></button>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="tit_wrap">
+                    <h2 class="title03"><span>카매니저 마이샵</span> 상담하기</h2>
+                </div>
+                <div class="counsel_wrap">
+                    <div class="left_side">
+                        <div class="radio_box">
+                            <div class="radio_wrap">
+                                <input type="radio" name="counsel" id="qc05" checked="checked">
+                                <label for="qc05">중고차 사고 싶어요</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" name="counsel" id="qc06">
+                                <label for="qc06">내차 팔고 싶어요</label>
+                            </div>
+                        </div>
+                        <div class="col_box">
+                            <div>
+                                <div class="col col02">
+                                    <div class="input_wrap">
+                                        <input type="text" name="" id="" placeholder="이름(필수)">
+                                    </div>
+                                </div>
+                                <div class="col col02">
+                                    <div class="input_wrap">
+                                        <input type="text" name="" id="" placeholder="연락처(필수)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_wrap">
+                            <input type="text" name="" id="" placeholder="원하시는 차종">
+                        </div>
+                        <div class="textarea_wrap">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="상세한 요청사항"></textarea>
+                        </div>
+                        <div class="check_wrap">
+                            <input type="checkbox" name="" id="agree3">
+                            <label for="agree3">개인정보 사용 수집 동의</label>
+                        </div>
+                        <button type="button"><span>전문보기</span></button>
+
+                        <button type="button" class="btn_submit"><span>상담요청하기</span></button>
+                    </div>
+                    <div class="right_side">
+                        <p class="title04">실시간 상담현황
+                            <a href="#">더보기</a>
+                        </p>
+
+                        <div class="table_wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width:90px;">
+                                    <col>
+                                    <col style="width:88px;">
+                                    <col style="width:95px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">구분</th>
+                                        <th scope="row">상담내용</th>
+                                        <th scope="row">신청자</th>
+                                        <th scope="row">처리현황</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge type01">구매문의</span></td>
+                                        <td class="align_l"><p class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</p></td>
+                                        <td>김길동</td>
+                                        <td>처리중</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge type02">판매문의</span></td>
+                                        <td class="align_l"><a href="#" class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</a></td>
+                                        <td>김길동</td>
+                                        <td>처리중</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge type03">할부문의</span></td>
+                                        <td class="align_l"><p class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</p></td>
+                                        <td>김길동</td>
+                                        <td>처리중</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge type01">구매문의</span></td>
+                                        <td class="align_l"><p class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</p></td>
+                                        <td>김길동</td>
+                                        <td>처리중</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge type01">구매문의</span></td>
+                                        <td class="align_l"><p class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</p></td>
+                                        <td>김길동</td>
+                                        <td>처리완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge type01">구매문의</span></td>
+                                        <td class="align_l"><p class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</p></td>
+                                        <td>김길동</td>
+                                        <td>처리중</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge type01">구매문의</span></td>
+                                        <td class="align_l"><p class="ellipsis">상담내용입니다. 상담내용입니다. 상담내용입니다. 상담내용입니다.</p></td>
+                                        <td>김길동</td>
+                                        <td>처리완료</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tit_wrap">
+                    <h2 class="title03"><span>카매니저 마이샵</span> 고객만족후기</h2>
+                </div>
+                <div class="recom_list_wrap">
+                    <div>
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_242x182.jpg" alt=""></span>
+                                <div class="info">
+                                    <em>캐딜락 올 뉴 SRX 3.0 프리미엄 캐딜락 올 뉴 SRX 3.0 프리미엄</em>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //고객만족후기 -->
+
+
+                <div class="tit_wrap">
+                    <h2 class="title03"><span>카매니저 마이샵</span> 고객만족후기</h2>
+                </div>
+                <div class="recom_swiper_wrap">
+                    <div class="recom_swiper">
+                        <div>
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_168x122.jpg" alt=""></span>
+                                <p>K5 하이브리드 출고후기</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_168x122.jpg" alt=""></span>
+                                <p>K5 하이브리드 출고후기</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_168x122.jpg" alt=""></span>
+                                <p>K5 하이브리드 출고후기</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_168x122.jpg" alt=""></span>
+                                <p>K5 하이브리드 출고후기</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_168x122.jpg" alt=""></span>
+                                <p>K5 하이브리드 출고후기</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="img"><img src="/static/images/temp/temp_168x122.jpg" alt=""></span>
+                                <p>K5 하이브리드 출고후기</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //Contents -->
+    </div>
+    <!-- //Container -->
+
+    <div id="footer">
+        <div class="inner">
+            <p class="footer_logo">
+                <img src="/static/images/common/footer_logo.png" alt="카매니저">
+            </p>
+
+            <div class="footer_info">
+                <p>사업자등록번호 : 103-521-54865</p>
+                <address>서울특별시 강남구 봉은사로 449 밤부타워 F9, 10</address>
+                <p>대표자 : 함석필&nbsp;&nbsp;&nbsp;대표번호 : 02-3474-6545</p>
+            </div>
+        </div>
+    </div>
+    <!-- //Footer -->
+</div>
+<!-- //Wrap -->
+</body>
+</html>

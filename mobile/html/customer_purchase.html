@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="customer_wrap">
+                <div class="tit_wrap">
+                    <a href="#" class="btn_prev"><i class="ico_prev"></i><span>이전으로</span></a>
+                    <h2 class="tit_type01">고객상담</h2>
+                </div>
+
+                <div class="tab_wrap type02">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="current" data-link="true"><a href="customer_purchase.html"><span>구매상담</span></a></li>
+                            <li data-link="true"><a href="customer_sale.html"><span>판매상담</span></a></li>
+                            <li data-link="true"><a href="customer_instalment.html"><span>할부문의</span></a></li>
+                            <li data-link="true"><a href="customer_history.html"><span>상담내역</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_box current">
+                        <h3 class="tit_type03">구매상담</h3>
+
+                        <div class="form_box type02">
+                            <div class="col2">
+                                <div><input type="text" name="" id="" placeholder="이름 (필수)" value=""></div>
+                                <div><input type="tel" name="" id="" placeholder="연락처 (필수)" value=""></div>
+                            </div>
+                            <div><input type="text" name="" id="" placeholder="차종/모델명 혹은 차량번호" value=""></div>
+                            <div><textarea name="" id="" cols="30" rows="10" placeholder="상세내용"></textarea></div>
+
+                            <div class="chk_agree">
+                                <p class="chk_wrap">
+                                    <input type="checkbox" name="" id="form_chk01"><label for="form_chk01">개인정보 사용 수집에 동의합니다.</label>
+                                </p>
+                                <button type="button" class="btn small_type" data-modal="#modal"><span>전문보기</span></button>
+                            </div>
+
+                            <button type="button" class="btn_submit"><span>상담요청</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Container -->
+</div>
+
+<!-- Layer Popup -->
+<div class="modal_wrap" id="modal">
+    <div class="modal_inner">
+        <a href="#" class="dimmed"></a>
+        <div class="modal_box">
+            <div class="modal_header">
+                <div class="md_tit">
+                    <h2>개인정보취급약관</h2>
+                </div>
+                <button type="button" class="modal_close"><span>닫기</span></button>
+            </div>
+            <div class="modal_content">
+                <div class="modal_content_inner">
+                    <p>잘나가는차(잘나가는차)는 이용자들의 개인정보보호를 매우 중요시하며, 이용자가 잘나가는차의 서비스를 이용함과 동시에 
+                    온라인상에서 잘나가는차에 제공한 개인정보가 보호 받을 수 
+                    있도록 최선을 다하고 있습니다.</p>
+
+                    <p>이에 잘나가는차는 통신비밀보호법, 전기통신사업법, 정보통
+                    신망이용촉진등에관한법률 등 정보통신서비스제공자가 준수
+                    하여야 할 관련 법규상의 개인정보보호 규정 및 정보통신부가 
+                    제정한 개인정보보호지침을 준수하고 있습니다.</p>
+
+                    <p>회사는 개인정보 보호정책을 통하여 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 
+                    개인정보보호를 위해 어떠한 조치가 취해지고 있는지 
+                    알려드립니다.<br>
+                    잘나가는차는 개인정보 보호정책을 홈페이지 첫 화면에 
+                    공개함으로써 이용자들이 언제나 용이하게 보실 수 있도록 
+                    조치하고 있습니다.</p>
+
+                    <p>1. 개인정보 수집에 대한 동의</p>
+
+                    <p>잘나가는차는 귀하께서 잘나가는차의 이용약관의 내용에 대해
+                    「동의한다」버튼 또는 「동의하지 않는다」버튼을 클릭할 수 있는 절차를 마련하여, 「동의한다」버튼을 클릭하면 개인정보 수집 및 이용에 대하여 동의한 것으로 봅니다.</p>
+
+                    <p>2.개인정보의 수집목적 및 이용목적</p>
+
+                    <p>잘나가는차가 회원님 개인의 정보를 수집하는 목적은 잘나가는차 사이트를 통하여 회원님께 최적의 맞춤화된 서비스를 제공해드리기 위한 것입니다.</p>
+
+                    <p>잘나가는차는 각종의 컨텐츠를 무료로 서비스해 드리고 있습니다. 이때 회원님께서 제공해주신 개인정보를 바탕으로 회원님께 보다 더 유용한 정보를 선택적으로 제공하는 것이 가능하게 됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //Layer Popup -->
+</body>
+</html>

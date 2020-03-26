@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* Accent Color */
+.acc_color{color:#ef4c4d;border:1px solid #ef4c4d;background-color:#ef4c4d;}
+
+/* Form */
+.select_wrap.type01:after, .form_wrap .btn_select:after{border-color:#ef4c4d !important;}
+.tab_wrap.type03 .form_wrap .btn_select.on:after{border-color:#ef4c4d !important;}
+
+/* 추천차량 */
+.recom_wrap .swiper-slide a:hover, .recom_wrap .swiper-slide a:focus{border-color:#ef4c4d;}
+
+/* Range */
+.range_wrap .irs--round .irs-bar{background-color:#ef4c4d !important;}
+.range_wrap .irs--round .irs-handle{background-color:#ef4c4d !important;}

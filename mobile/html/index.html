@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="visual_area">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="vs_inner vs_item01">
+                                <div class="d_table">
+                                    <div class="d_cell">
+                                        <p><strong>카매니저</strong>에서 지금 원하시는 중고차를<br>실시간으로 만나보세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vs_inner vs_item02">
+                                <div class="d_table">
+                                    <div class="d_cell">
+                                        <p><strong>허위매물</strong>은 단 한대도 존재하지 않으며<br>최저가의 매물을 전문 딜러와<br>1:1 무료상담으로 진행됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vs_inner vs_item03">
+                                <div class="d_table">
+                                    <div class="d_cell">
+                                        <p><strong>매입, 진단, 관리, 판매</strong>까지<br>모두 직접 수행하며 책임 운영합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- //Visual Swiper -->
+
+            <div class="quick_menu">
+                <ul>
+                    <li><a href="search_manufacturer.html"><i class="ico_quick01"></i><p>국산차</p></a></li>
+                    <li><a href="search_manufacturer.html"><i class="ico_quick02"></i><p>수입차</p></a></li>
+                    <li><a href="search_manufacturer.html"><i class="ico_quick03"></i><p>화물차</p></a></li>
+                    <li><a href="customer_purchase.html"><i class="ico_quick04"></i><p>구매상담</p></a></li>
+                    <li><a href="customer_sale.html"><i class="ico_quick05"></i><p>판매상담</p></a></li>
+                    <li><a href="community_review.html"><i class="ico_quick06"></i><p>고객후기</p></a></li>
+                    <li><a href="community_about.html"><i class="ico_quick07"></i><p>회사소개</p></a></li>
+                    <li><a href="community_location.html"><i class="ico_quick08"></i><p>오시는길</p></a></li>
+                </ul>
+            </div>
+            <!-- //Quick Menu -->
+
+            <div class="banner_area">
+                <a href="#"><img src="/static/images/main/banner.png" alt="조회서비스 OPEN 차량사양조회 (무료)와 사고이력조회 (유료)"></a>
+            </div>
+            <!-- //Banner -->
+
+            <div class="section01">
+                <h2 class="tit_type01">매물 (신규/추천)</h2>
+
+                <div class="recomm_swiper type01">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="detail_view.html">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type01_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="detail_view.html">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type01_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">현대 투싼iX 4WD VGT LMX20 프리미엄</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>휘발유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>21,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type01_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type01_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">현대 투싼iX 4WD VGT LMX20 프리미엄</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="recomm_swiper type02">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="detail_view.html">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type02_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="detail_view.html">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type02_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스 뉴오피러스 뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>휘발유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>21,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type02_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type02_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type02_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스 뉴오피러스 뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>21,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="item_box">
+                                        <img src="/static/images/temp/recomm_type02_slide01.png" alt="자동차 이미지">
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //section01 매물 (신규/추천) -->
+
+            <div class="section02">
+                <h2 class="tit_type01">빠른 상담 문의</h2>
+
+                <div class="tab_wrap">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="current"><a href="#"><span>구매문의</span></a></li>
+                            <li><a href="#"><span>판매문의</span></a></li>
+                            <li><a href="#"><span>할부문의</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_box current">
+                        <div class="form_box">
+                            <div><input type="text" name="" id="" placeholder="이름 (필수)" value=""></div>
+                            <div><input type="tel" name="" id="" placeholder="연락처 (필수)" value=""></div>
+                            <div><input type="text" name="" id="" placeholder="모델명" value=""></div>
+
+                            <button type="button" class="btn_submit"><span>상담요청</span></button>
+                        </div>
+                        <div class="chk_agree">
+                            <p class="chk_wrap">
+                                <input type="checkbox" name="" id="form_chk01"><label for="form_chk01">개인정보 사용 수집에 동의합니다.</label>
+                            </p>
+                            <button type="button" class="btn" data-modal="#modal"><span>전문보기</span></button>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="form_box">
+                            <div><input type="text" name="" id="" placeholder="이름 (필수)" value=""></div>
+                            <div><input type="tel" name="" id="" placeholder="연락처 (필수)" value=""></div>
+                            <div><textarea name="" id="" cols="30" rows="10" placeholder="상담내용"></textarea></div>
+
+                            <button type="button" class="btn_submit"><span>상담요청</span></button>
+                        </div>
+                        <div class="chk_agree">
+                            <p class="chk_wrap">
+                                <input type="checkbox" name="" id="form_chk01"><label for="form_chk01">개인정보 사용 수집에 동의합니다.</label>
+                            </p>
+                            <button type="button" class="btn" data-modal="#modal"><span>전문보기</span></button>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="form_box">
+                            <div><input type="text" name="" id="" placeholder="이름 (필수)" value=""></div>
+                            <div><input type="tel" name="" id="" placeholder="연락처 (필수)" value=""></div>
+                            <div><input type="text" name="" id="" placeholder="차량명 혹은 차량번호 (필수)" value=""></div>
+                            <div><input type="tel" name="" id="" placeholder="할부 개월수 (필수)" value=""></div>
+
+                            <button type="button" class="btn_submit"><span>상담요청</span></button>
+                        </div>
+                        <div class="chk_agree">
+                            <p class="chk_wrap">
+                                <input type="checkbox" name="" id="form_chk01"><label for="form_chk01">개인정보 사용 수집에 동의합니다.</label>
+                            </p>
+                            <button type="button" class="btn" data-modal="#modal"><span>전문보기</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Tab -->
+            </div>
+            <!-- //section02 빠른 상담 문의 -->
+
+            <div class="section03">
+                <h2 class="tit_type01">빠른 검색</h2>
+
+                <div class="tab_wrap">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="current"><a href="#"><span>제조사</span></a></li>
+                            <li><a href="#"><span>차종</span></a></li>
+                            <li><a href="#"><span>가격대</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_box current">
+                        <div class="bg_gray">
+                            <ul class="category column5">
+                                <li><a href="#">현대</a></li>
+                                <li><a href="#">제네시스</a></li>
+                                <li><a href="#">기아</a></li>
+                                <li><a href="#">쉐보레</a></li>
+                                <li><a href="#">대우</a></li>
+                                <li><a href="#">벤츠</a></li>
+                                <li><a href="#">BMW</a></li>
+                                <li><a href="#">아우디</a></li>
+                                <li><a href="#">폭스바겐</a></li>
+                                <li><a href="#">랜드로버</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="bg_gray">
+                            <ul class="category column4">
+                                <li><a href="#">경차</a></li>
+                                <li><a href="#">소형차</a></li>
+                                <li><a href="#">준중형</a></li>
+                                <li><a href="#">중형</a></li>
+                                <li><a href="#">대형</a></li>
+                                <li><a href="#">RV/SUV</a></li>
+                                <li><a href="#">스포츠카</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="bg_gray">
+                            <ul class="category column4 small_txt">
+                                <li><a href="#">0~200만원</a></li>
+                                <li><a href="#">200~500만원</a></li>
+                                <li><a href="#">500~800만원</a></li>
+                                <li><a href="#">800~1000만원</a></li>
+                                <li><a href="#">1000~1500만원</a></li>
+                                <li><a href="#">1500~2000만원</a></li>
+                                <li><a href="#">2000~3000만원</a></li>
+                                <li><a href="#">3000만원 이상</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Tab -->
+
+
+                <div class="tab_wrap_ext">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="current"><a href="#"><span>국산차</span></a></li>
+                            <li><a href="#"><span>수입차</span></a></li>
+                            <li><a href="#"><span>차종</span></a></li>
+                            <li><a href="#"><span>가격대</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_box current">
+                        <div class="car_swiper_area">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_hyundai.png" alt=""></span>
+                                                <p class="cate_name">현대</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_genesis.png" alt=""></span>
+                                                <p class="cate_name">제네시스</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_kia.png" alt=""></span>
+                                                <p class="cate_name">기아</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_chevrolet.png" alt=""></span>
+                                                <p class="cate_name">쉐보레</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_samsung.png" alt=""></span>
+                                                <p class="cate_name">르노삼성</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="car_swiper_area">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_benz.png" alt=""></span>
+                                                <p class="cate_name">벤츠</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_bmw.png" alt=""></span>
+                                                <p class="cate_name">BMW</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_audi.png" alt=""></span>
+                                                <p class="cate_name">아우디</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_vw.png" alt=""></span>
+                                                <p class="cate_name">폭스바겐</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/main/emblem_landrover.png" alt=""></span>
+                                                <p class="cate_name">랜드로버</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="car_swiper_area">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car01.png" alt=""></span>
+                                                <p class="cate_name">경차</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car02.png" alt=""></span>
+                                                <p class="cate_name">소형</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car03.png" alt=""></span>
+                                                <p class="cate_name">중형</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car04.png" alt=""></span>
+                                                <p class="cate_name">준중형</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car05.png" alt=""></span>
+                                                <p class="cate_name">대형</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="car_swiper_area">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car06.png" alt=""></span>
+                                                <p class="cate_price">0~<br>200만원</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car07.png" alt=""></span>
+                                                <p class="cate_price">200~<br>500만원</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car08.png" alt=""></span>
+                                                <p class="cate_price">500~<br>800만원</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car09.png" alt=""></span>
+                                                <p class="cate_price">800~<br>1000만원</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="cate_item">
+                                                <span class="img"><img src="/static/images/temp/car10.png" alt=""></span>
+                                                <p class="cate_price">1000~<br>1500만원</p>
+                                                <p class="unit">(<span>1,234</span>대)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //section03 빠른 검색 -->
+
+            <div class="section04">
+                <h2 class="tit_type02">오시는길</h2>
+
+                <div id="map"><img src="/static/images/temp/map.png" alt=""></div>
+
+                <!-- 
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1582681909275",
+                        "key" : "x8k2",
+                        "mapWidth" : "360",
+                        "mapHeight" : "240"
+                    }).render();
+                </script>
+                -->
+                <!--
+                <script src="//http://dapi.kakao.com/v2/maps/sdk.js?appkey=326e38503f420e1f0088dab1f46dc0c7&libraries=services,clusterer,drawing"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = {
+                            center: new kakao.maps.LatLng(37.56682, 126.97865), // 지도의 중심좌표
+                            level: 3, // 지도의 확대 레벨
+                            mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+                        }; 
+            
+                    // 지도를 생성한다 
+                    var map = new kakao.maps.Map(mapContainer, mapOption); 
+            
+                    // 지도에 확대 축소 컨트롤을 생성한다
+                    var zoomControl = new kakao.maps.ZoomControl();
+            
+                    // 지도의 우측에 확대 축소 컨트롤을 추가한다
+                    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+            
+                    // 지도 중심 좌표 변화 이벤트를 등록한다
+                    kakao.maps.event.addListener(map, 'center_changed', function () {
+                        console.log('지도의 중심 좌표는 ' + map.getCenter().toString() +' 입니다.');
+                    });
+            
+                    // 지도 확대 레벨 변화 이벤트를 등록한다
+                    kakao.maps.event.addListener(map, 'zoom_changed', function () {
+                        console.log('지도의 현재 확대레벨은 ' + map.getLevel() +'레벨 입니다.');
+                    });
+            
+                    // 지도에 마커를 생성하고 표시한다
+                    var marker = new kakao.maps.Marker({
+                        position: new kakao.maps.LatLng(37.56682, 126.97865), // 마커의 좌표
+                        map: map // 마커를 표시할 지도 객체
+                    });
+            
+                </script>
+                -->
+
+                <ul class="map_info">
+                    <li><i class="ico_home"></i>서울시 강남구 봉은사로 449 밤부타워 10층</li>
+                    <li><i class="ico_tel"></i><a href="tel:070-1234-1234">070-1234-1234</a></li>
+                    <li><i class="ico_post"></i><a href="mail:1234@bizinfogroup.co.kr">1234@bizinfogroup.co.kr</a></li>
+                </ul>
+                <div class="traffic_info">
+                    <ul>
+                        <li>
+                            <span class="gt_ele"><i class="ico_train"></i>지하철</span>
+
+                            <dl>
+                                <dt><span class="badge line9">9</span></dt>
+                                <dd>선정릉역<br>삼성중앙역</dd>
+                            </dl>
+                            <dl>
+                                <dt><span class="badge line_bundang">분당</span></dt>
+                                <dd>선정릉역</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <span class="gt_ele"><i class="ico_bus"></i>버스</span>
+
+                            <span class="badge2 blue">342</span>
+                            <span class="badge2 green">3412</span>
+                            <span class="badge2 light_green">강남07</span>
+                            <p>삼성중앙역 플래티넘아파트 (23-210)</p>
+                        </li>
+                        <li>
+                            <span class="gt_ele"><i class="ico_taxi"></i>자가용</span>
+                            <p>서울시 강남구 봉은사로 449</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //section04 오시는길 -->
+
+        </div>
+    </div>
+    <!-- //Container -->
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer">
+            <div class="doc_type01">
+                <ul>
+                    <li><a href="index.html"><i class="ico_doc_home"></i>홈</a></li>
+                    <li><a href="customer_purchase.html"><i class="ico_doc_quick"></i>빠른상담</a></li>
+                    <li><a href="search_manufacturer.html"><i class="ico_doc_search"></i>차량검색</a></li>
+                    <li><a href="#"><i class="ico_doc_menu"></i>카테고리</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- //Footer -->
+</div>
+
+<!-- Layer Popup -->
+<div class="modal_wrap" id="modal">
+    <div class="modal_inner">
+        <a href="#" class="dimmed"></a>
+        <div class="modal_box">
+            <div class="modal_header">
+                <div class="md_tit">
+                    <h2>개인정보취급약관</h2>
+                </div>
+                <button type="button" class="modal_close"><span>닫기</span></button>
+            </div>
+            <div class="modal_content">
+                <div class="modal_content_inner">
+                    <p>잘나가는차(잘나가는차)는 이용자들의 개인정보보호를 매우 중요시하며, 이용자가 잘나가는차의 서비스를 이용함과 동시에 
+                    온라인상에서 잘나가는차에 제공한 개인정보가 보호 받을 수 
+                    있도록 최선을 다하고 있습니다.</p>
+
+                    <p>이에 잘나가는차는 통신비밀보호법, 전기통신사업법, 정보통
+                    신망이용촉진등에관한법률 등 정보통신서비스제공자가 준수
+                    하여야 할 관련 법규상의 개인정보보호 규정 및 정보통신부가 
+                    제정한 개인정보보호지침을 준수하고 있습니다.</p>
+
+                    <p>회사는 개인정보 보호정책을 통하여 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 
+                    개인정보보호를 위해 어떠한 조치가 취해지고 있는지 
+                    알려드립니다.<br>
+                    잘나가는차는 개인정보 보호정책을 홈페이지 첫 화면에 
+                    공개함으로써 이용자들이 언제나 용이하게 보실 수 있도록 
+                    조치하고 있습니다.</p>
+
+                    <p>1. 개인정보 수집에 대한 동의</p>
+
+                    <p>잘나가는차는 귀하께서 잘나가는차의 이용약관의 내용에 대해
+                    「동의한다」버튼 또는 「동의하지 않는다」버튼을 클릭할 수 있는 절차를 마련하여, 「동의한다」버튼을 클릭하면 개인정보 수집 및 이용에 대하여 동의한 것으로 봅니다.</p>
+
+                    <p>2.개인정보의 수집목적 및 이용목적</p>
+
+                    <p>잘나가는차가 회원님 개인의 정보를 수집하는 목적은 잘나가는차 사이트를 통하여 회원님께 최적의 맞춤화된 서비스를 제공해드리기 위한 것입니다.</p>
+
+                    <p>잘나가는차는 각종의 컨텐츠를 무료로 서비스해 드리고 있습니다. 이때 회원님께서 제공해주신 개인정보를 바탕으로 회원님께 보다 더 유용한 정보를 선택적으로 제공하는 것이 가능하게 됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //Layer Popup -->
+</body>
+</html>

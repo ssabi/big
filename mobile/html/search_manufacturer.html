@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="opt_wrap">
+                <div class="ow_top">
+                    <h2 class="tit_type01">제조사</h2>
+
+                    <div class="sch_part">
+                        <select name="" id="">
+                            <option value="">검색분류</option>
+                            <option value="">제조사</option>
+                            <option value="">차종</option>
+                            <option value="">가격대</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Option Area -->
+
+            <div class="sch_opt_box">
+                
+                <div class="tab_wrap type03">
+                    <div class="tab_list">
+                        <ul>
+                            <li class="current"><a href="#"><span>국산차</span></a></li>
+                            <li><a href="#"><span>수입차</span></a></li>
+                        </ul>
+                        <a href="#" class="btn_total_sch">전체검색</a>
+                    </div>
+                    <div class="tab_box current">
+                        <div class="bg_gray">
+                            <ul class="category column4">
+                                <li><a href="#">현대</a></li>
+                                <li><a href="#">제네시스</a></li>
+                                <li><a href="#">기아</a></li>
+                                <li><a href="#">쉐보레</a></li>
+                                <li><a href="#">대우</a></li>
+                                <li><a href="#">삼성</a></li>
+                                <li><a href="#">쌍용</a></li>
+                                <li><a href="#">기타제조사</a></li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn_more"><span><i></i><em>더보기</em></span></button>
+
+                        <div class="hide_category bg_gray">
+                            <ul class="category column4">
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_box">
+                        <div class="bg_gray">
+                            <ul class="category column4">
+                                <li><a href="#">벤츠</a></li>
+                                <li><a href="#">BMW</a></li>
+                                <li><a href="#">아우디</a></li>
+                                <li><a href="#">폭스바겐</a></li>
+                                <li><a href="#">미니</a></li>
+                                <li><a href="#">랜드로버</a></li>
+                                <li><a href="#">렉서스</a></li>
+                                <li><a href="#">제조사</a></li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn_more"><span><i></i><em>더보기</em></span></button>
+
+                        <div class="hide_category bg_gray">
+                            <ul class="category column4">
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">제조사</a></li>
+                                <li><a href="#">Cell</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Tab -->
+
+                <div class="btn_box">
+                    <a href="#" class="btn_select"><span>모델 선택</span></a>
+                </div>
+
+                <div class="model_box">
+                    <!-- 
+                    <div class="bg_gray">
+                        <h2 class="tit_type03">모델 선택</h2>
+                    </div>
+                     -->
+
+                    <div class="tab_wrap_ext type02">
+                        <div class="tab_list">
+                            <ul>
+                                <li class="current"><a href="#"><span>국산차</span></a></li>
+                                <li><a href="#"><span>수입차</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_box current">
+                            <div class="car_swiper_area">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_hyundai.png" alt=""></span>
+                                                    <p class="cate_name">현대</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_genesis.png" alt=""></span>
+                                                    <p class="cate_name">제네시스</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_kia.png" alt=""></span>
+                                                    <p class="cate_name">기아</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_chevrolet.png" alt=""></span>
+                                                    <p class="cate_name">쉐보레</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_samsung.png" alt=""></span>
+                                                    <p class="cate_name">르노삼성</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_box">
+                            <div class="car_swiper_area">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_benz.png" alt=""></span>
+                                                    <p class="cate_name">벤츠</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_bmw.png" alt=""></span>
+                                                    <p class="cate_name">BMW</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_audi.png" alt=""></span>
+                                                    <p class="cate_name">아우디</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_vw.png" alt=""></span>
+                                                    <p class="cate_name">폭스바겐</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="cate_item">
+                                                    <span class="img"><img src="/static/images/main/emblem_landrover.png" alt=""></span>
+                                                    <p class="cate_name">랜드로버</p>
+                                                    <p class="unit">(<span>1,234</span>대)</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- //Container -->
+</div>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="opt_wrap">
+                <div class="ow_btm">
+                    <a href="#" class="btn_prev"><i class="ico_prev"></i><span>이전으로</span></a>
+
+                    올뉴마티즈
+
+                    <button type="button" class="btn_reset"><span>초기화 <i class="ico_reset"></i></span></button>
+                </div>
+            </div>
+            <!-- Option Area -->
+
+            <div class="result_wrap">
+                <div class="sch_opt">
+                    <p class="total">3,000대</p>
+
+                    <div class="sch_ext_box">
+                        <a href="#" class="btn_list_type type01"><i></i></a>
+
+                        <button type="button" class="btn_order"><span>정렬</span></button>
+                        <button type="button" class="btn_detail_search" data-modal="#detail_search_modal"><span>상세 검색</span></button>
+                    </div>
+                </div>
+                <!-- //Search Option -->
+
+                <div class="result_list type01">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="item_box">
+                                    <img src="/static/images/temp/result_list01.jpg" alt="자동차 이미지">
+                                    <div>
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="item_box">
+                                    <img src="/static/images/temp/result_list01.jpg" alt="자동차 이미지">
+                                    <div>
+                                        <p class="car_name">현대 투싼iX 4WD VGT 프리미엄</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="item_box">
+                                    <img src="/static/images/temp/99C1E686D7AE4F35C01C67D0222DFF5C414E7DEA84CE962A2623F586F17F635A.jpg" alt="자동차 이미지">
+                                    <div>
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="item_box">
+                                    <img src="/static/images/temp/result_list01.jpg" alt="자동차 이미지">
+                                    <div>
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="item_box">
+                                    <img src="/static/images/temp/result_list01.jpg" alt="자동차 이미지">
+                                    <div>
+                                        <p class="car_name">뉴오피러스</p>
+                                        <ul>
+                                            <li>2014</li>
+                                            <li>오토</li>
+                                            <li>경유</li>
+                                        </ul>
+                                        <p class="unit">450.000km</p>
+                                        <p class="price"><span>1,600</span>만원</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Container -->
+</div>
+
+<!-- Layer Popup -->
+<div class="modal_wrap" id="detail_search_modal">
+    <div class="modal_inner">
+        <a href="#" class="dimmed"></a>
+        <div class="modal_box type02">
+            <div class="modal_header">
+                <div class="md_tit">
+                    <h2>상세검색</h2>
+                </div>
+                <button type="button" class="modal_close"><span>닫기</span></button>
+            </div>
+            <div class="modal_content">
+                <div class="modal_content_inner">
+
+                    <div class="detail_opt_box">
+                        <div class="opt_item inline">
+                            <div class="tit">연식</div>
+                            <div class="con">
+
+                                <div class="md_form_box">
+                                    <div class="input_wrap type02">
+                                        <!-- <a href="#">최소 연식</a> -->
+                                        <div class="select_wrap">
+                                            <select name="" id="">
+                                                <option value="">최소 연식</option>
+                                                <option value="">2020</option>
+                                                <option value="">2019</option>
+                                                <option value="">2018</option>
+                                                <option value="">2017</option>
+                                                <option value="">2016</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <span class="sep">~</span>
+                                    <div class="input_wrap type02">
+                                        <!-- <a href="#">최고 연식</a> -->
+                                        <div class="select_wrap">
+                                            <select name="" id="">
+                                                <option value="">최고 연식</option>
+                                                <option value="">2020</option>
+                                                <option value="">2019</option>
+                                                <option value="">2018</option>
+                                                <option value="">2017</option>
+                                                <option value="">2016</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="" id="d_write">
+                                    <label for="total_mission">직접입력</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="opt_item inline">
+                            <div class="tit">가격</div>
+                            <div class="con">
+
+                                <div class="md_form_box">
+                                    <div class="input_wrap type02">
+                                        <!-- <a href="#">최소 가격</a> -->
+                                        <div class="select_wrap">
+                                            <select name="" id="">
+                                                <option value="">최소 가격</option>
+                                                <option value="">가격1</option>
+                                                <option value="">가격2</option>
+                                                <option value="">가격3</option>
+                                                <option value="">가격4</option>
+                                                <option value="">가격5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <span class="sep">~</span>
+                                    <div class="input_wrap type02">
+                                        <!-- <a href="#">최고 가격</a> -->
+                                        <div class="select_wrap">
+                                            <select name="" id="">
+                                                <option value="">최고 가격</option>
+                                                <option value="">가격1</option>
+                                                <option value="">가격2</option>
+                                                <option value="">가격3</option>
+                                                <option value="">가격4</option>
+                                                <option value="">가격5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="" id="d_write">
+                                    <label for="total_mission">직접입력</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="opt_item">
+                            <div class="tit">주행거리</div>
+                            <div class="con indent">
+                                <div class="md_form_box">
+                                    <div class="input_wrap">
+                                        <input type="text" name="" id="" placeholder="최소 거리">
+                                    </div>
+                                    <span class="sep">~</span>
+                                    <div class="input_wrap">
+                                        <input type="text" name="" id="" placeholder="최대 거리">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opt_item">
+                            <div class="tit">미션
+                                <div class="chkbox">
+                                    <input type="checkbox" name="" id="total_mission">
+                                    <label for="total_mission">전체선택</label>
+                                </div>
+                            </div>
+                            <div class="con">
+                                <div class="column4_wrap">
+                                    <div class="column4">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="mission_type01">
+                                            <label for="mission_type01">오토</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="mission_type02">
+                                            <label for="mission_type02">수동</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="mission_type03">
+                                            <label for="mission_type03">세미오토</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="mission_type04">
+                                            <label for="mission_type04">무단변속기</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opt_item">
+                            <div class="tit">연료
+                                <div class="chkbox">
+                                    <input type="checkbox" name="" id="total_fuel">
+                                    <label for="total_fuel">전체선택</label>
+                                </div>
+                            </div>
+                            <div class="con">
+                                <div class="column4_wrap">
+                                    <div class="column4">
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type01">
+                                            <label for="fuel_type01">휘발유</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type02">
+                                            <label for="fuel_type02">경유</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type03">
+                                            <label for="fuel_type03">LPG</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type04">
+                                            <label for="fuel_type04">전기</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type05">
+                                            <label for="fuel_type05" class="small_txt">휘발류+전기</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type06">
+                                            <label for="fuel_type06">경유+전기</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type07">
+                                            <label for="fuel_type07">LPG+전기</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type08">
+                                            <label for="fuel_type08" class="small_txt">휘발류+전기</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type09">
+                                            <label for="fuel_type09" class="small_txt">휘발류+CNG</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type10">
+                                            <label for="fuel_type10">CNG</label>
+                                        </div>
+                                        <div class="chkbox">
+                                            <input type="checkbox" name="" id="fuel_type11">
+                                            <label for="fuel_type11">수소</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="opt_item">
+                            <div class="tit">색상</div>
+                            <div class="con">
+
+                            </div>
+                        </div>
+                        -->
+                    </div>
+
+                    <div class="md_btn_box">
+                        <button type="butotn" class="btn line reset"><span>초기화</span></button>
+                        <button type="butotn" class="btn blue"><span>검색</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //Layer Popup -->
+</body>
+</html>

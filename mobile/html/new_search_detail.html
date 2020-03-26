@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이샵3.0</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/myshop_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <h1 class="logo"><a href="index.html"><img src="/static/images/common/logo.svg" alt="카매니저"></a></h1>
+
+            <nav>
+                <button type="button" class="open_menu">
+                    <span><img src="/static/images/common/open_menu.png" alt="메뉴열기"></span>
+                </button>
+                <div class="navigation">
+                    <a href="#" class="dimmed"></a>
+                    <div class="menu_list">
+                        <div class="menu_list_inner">
+                            <div class="menu_top">
+                                <a href="#" class="nav_admin"><i class="ico_admin"></i>관리자로그인</a>
+                            </div>
+                            <p>카테고리</p>
+                            <ul class="nav">
+                                <li><a href="customer_purchase.html"><i class="ico_menu_quick"></i>빠른상담</a></li>
+                                <li><a href="community_review.html"><i class="ico_menu_review"></i>고객후기</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_dcar"></i>국산차</a></li>
+                                <li><a href="search_manufacturer.html"><i class="ico_menu_fcar"></i>수입차</a></li>
+                                <li><a href="community_about.html"><i class="ico_menu_about"></i>회사소개</a></li>
+                                <li><a href="community_location.html"><i class="ico_menu_loc"></i>오시는길</a></li>
+                                <li><a href="#"><i class="ico_menu_etc"></i>기타메뉴</a></li>
+                            </ul>
+
+                            <div class="etc">
+                                <ul>
+                                    <li><a href="index.html"><i class="ico_menu_home"></i>메인으로</a></li>
+                                    <li><a href="#"><i class="ico_menu_qna"></i>내차상담문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="close_menu">
+                            <span><img src="/static/images/common/ico_menu_close.png" alt="메뉴닫기"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Container -->
+    <div id="container">
+        <div id="contents">
+
+            <div class="search_tab_wrap">
+                <div class="opt_wrap">
+                    <div class="ow_top">
+                        <h2 class="tit_type01">국산차 검색</h2>
+                    </div>
+                    <div class="ow_btm">
+                        <a href="#" class="btn_prev"><i class="ico_prev"></i><span>이전으로</span></a>
+    
+                        상세검색
+                    </div>
+                </div>
+
+                <div class="detail_opt_wrap">
+                    <div class="opt_box inline">
+                        <p class="ds_tit">연식</p>
+
+                        <div class="ds_con">
+                            <div class="ds_rst">
+                                <button type="button" class="btn_opt"><span>연식 선택</span></button>
+
+                                <!--
+                                값 입력 요소
+                                <div class="rst">
+                                    <div>
+                                        <p>2018</p>
+                                        <span>~</span>
+                                        <p>2020</p>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+
+                            <div class="detail_opt">
+                                <div class="inner">
+                                    <div class="left_side">
+                                        <div class="top_area">
+                                            <p><span>최소연식</span></p>
+                                            <p class="dir_ele"><input type="tel" name="" id="" placeholder="최소연식"></p>
+                                        </div>
+                                        <div class="mid_area">
+                                            <ul>
+                                                <li><a href="#">2020</a></li>
+                                                <li><a href="#">2019</a></li>
+                                                <li><a href="#">2018</a></li>
+                                                <li><a href="#">2017</a></li>
+                                                <li><a href="#">2016</a></li>
+                                                <li><a href="#">2015</a></li>
+                                                <li><a href="#">2014</a></li>
+                                                <li><a href="#">2013</a></li>
+                                                <li><a href="#">2012</a></li>
+                                                <li><a href="#">2011</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right_side">
+                                        <div class="top_area">
+                                            <p><span>최대연식</span></p>
+                                            <p class="dir_ele"><input type="tel" name="" id="" placeholder="최대연식"></p>
+                                        </div>
+                                        <div class="mid_area">
+                                            <ul>
+                                                <li><a href="#">2020</a></li>
+                                                <li><a href="#">2019</a></li>
+                                                <li><a href="#">2018</a></li>
+                                                <li><a href="#">2017</a></li>
+                                                <li><a href="#">2016</a></li>
+                                                <li><a href="#">2015</a></li>
+                                                <li><a href="#">2014</a></li>
+                                                <li><a href="#">2013</a></li>
+                                                <li><a href="#">2012</a></li>
+                                                <li><a href="#">2011</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btm_area">
+                                    <div class="chkbox chk_direct">
+                                        <input type="checkbox" name="" id="direct_year_chk">
+                                        <label for="direct_year_chk">직접입력</label>
+                                    </div>
+
+                                    <button type="button" class="btn_select"><span>선택</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //연식 -->
+
+                    <div class="opt_box inline">
+                        <p class="ds_tit">가격</p>
+                        <div class="ds_con">
+                            <div class="ds_rst">
+                                <button type="button" class="btn_opt"><span>가격 선택</span></button>
+
+                                <!--
+                                값 입력 요소
+                                <div class="rst">
+                                    <div>
+                                        <p>1,000만원</p>
+                                        <span>~</span>
+                                        <p>3,000만원</p>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+
+                            <div class="detail_opt">
+                                <div class="inner">
+                                    <div class="left_side">
+                                        <div class="top_area">
+                                            <p><span>최저가격</span></p>
+                                            <p class="dir_ele"><input type="tel" name="" id="" placeholder="최저가격"></p>
+                                        </div>
+                                        <div class="mid_area">
+                                            <ul>
+                                                <li><a href="#">100만원</a></li>
+                                                <li><a href="#">200만원</a></li>
+                                                <li><a href="#">300만원</a></li>
+                                                <li><a href="#">400만원</a></li>
+                                                <li><a href="#">500만원</a></li>
+                                                <li><a href="#">600만원</a></li>
+                                                <li><a href="#">700만원</a></li>
+                                                <li><a href="#">800만원</a></li>
+                                                <li><a href="#">900만원</a></li>
+                                                <li><a href="#">1,000만원</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right_side">
+                                        <div class="top_area">
+                                            <p><span>최대가격</span></p>
+                                            <p class="dir_ele"><input type="tel" name="" id="" placeholder="최대가격"></p>
+                                        </div>
+                                        <div class="mid_area">
+                                            <ul>
+                                                <li><a href="#">100만원</a></li>
+                                                <li><a href="#">200만원</a></li>
+                                                <li><a href="#">300만원</a></li>
+                                                <li><a href="#">400만원</a></li>
+                                                <li><a href="#">500만원</a></li>
+                                                <li><a href="#">600만원</a></li>
+                                                <li><a href="#">700만원</a></li>
+                                                <li><a href="#">800만원</a></li>
+                                                <li><a href="#">900만원</a></li>
+                                                <li><a href="#">1,000만원</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btm_area">
+                                    <div class="chkbox chk_direct">
+                                        <input type="checkbox" name="" id="direct_price_chk">
+                                        <label for="direct_price_chk">직접입력</label>
+                                    </div>
+
+                                    <button type="button" class="btn_select"><span>선택</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //가격 -->
+
+                    <div class="opt_box inline">
+                        <p class="ds_tit">주행거리</p>
+                        <div class="ds_con">
+                            <div class="ds_rst">
+                                <button type="button" class="btn_opt"><span>주행거리 선택</span></button>
+
+                                <!--
+                                값 입력 요소
+                                <div class="rst">
+                                    <div>
+                                        <p>1,000</p>
+                                        <span>~</span>
+                                        <p>3,000</p>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+
+                            <div class="detail_opt">
+                                <div class="inner">
+                                    <div class="left_side">
+                                        <div class="top_area">
+                                            <p><span>최소거리</span></p>
+                                            <p class="dir_ele"><input type="tel" name="" id="" placeholder="최소거리"></p>
+                                        </div>
+                                        <div class="mid_area">
+                                            <ul>
+                                                <li><a href="#">1,000</a></li>
+                                                <li><a href="#">2,000</a></li>
+                                                <li><a href="#">3,000</a></li>
+                                                <li><a href="#">4,000</a></li>
+                                                <li><a href="#">5,000</a></li>
+                                                <li><a href="#">6,000</a></li>
+                                                <li><a href="#">7,000</a></li>
+                                                <li><a href="#">8,000</a></li>
+                                                <li><a href="#">9,000</a></li>
+                                                <li><a href="#">10,000</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right_side">
+                                        <div class="top_area">
+                                            <p><span>최대거리</span></p>
+                                            <p class="dir_ele"><input type="tel" name="" id="" placeholder="최대거리"></p>
+                                        </div>
+                                        <div class="mid_area">
+                                            <ul>
+                                                <li><a href="#">1,000</a></li>
+                                                <li><a href="#">2,000</a></li>
+                                                <li><a href="#">3,000</a></li>
+                                                <li><a href="#">4,000</a></li>
+                                                <li><a href="#">5,000</a></li>
+                                                <li><a href="#">6,000</a></li>
+                                                <li><a href="#">7,000</a></li>
+                                                <li><a href="#">8,000</a></li>
+                                                <li><a href="#">9,000</a></li>
+                                                <li><a href="#">10,000</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btm_area">
+                                    <div class="chkbox chk_direct">
+                                        <input type="checkbox" name="" id="direct_distance_chk">
+                                        <label for="direct_distance_chk">직접입력</label>
+                                    </div>
+
+                                    <button type="button" class="btn_select"><span>선택</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //주행거리 -->
+
+                    <div class="opt_box">
+                        <p class="ds_tit">미션</p>
+
+                        <div class="chkbox all_chk">
+                            <input type="checkbox" name="" id="all_chk_m">
+                            <label for="all_chk_m">전체선택</label>
+                        </div>
+
+                        <div class="ds_con">
+                            <div class="col4_wrap">
+                                <div class="col4">
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="m_chk01">
+                                        <label for="m_chk01">오토</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="m_chk02">
+                                        <label for="m_chk02">수동</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="m_chk03">
+                                        <label for="m_chk03">세미오토</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="m_chk04">
+                                        <label for="m_chk04">무단변속기</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //미션 -->
+
+                    <div class="opt_box">
+                        <p class="ds_tit">연료</p>
+
+                        <div class="chkbox all_chk">
+                            <input type="checkbox" name="" id="all_chk_f">
+                            <label for="all_chk_f">전체선택</label>
+                        </div>
+
+                        <div class="ds_con">
+                            <div class="col4_wrap">
+                                <div class="col4">
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk01">
+                                        <label for="f_chk01">휘발유</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk02">
+                                        <label for="f_chk02">경유</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk03">
+                                        <label for="f_chk03">LPG</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk04">
+                                        <label for="f_chk04">전기</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk05">
+                                        <label for="f_chk05">휘발유+전기</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk06">
+                                        <label for="f_chk06">경유+전기</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk07">
+                                        <label for="f_chk07">LPG+전기</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk08">
+                                        <label for="f_chk08">휘발유+LPG</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk09">
+                                        <label for="f_chk09">휘발유+CNG</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk10">
+                                        <label for="f_chk10">CNG</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="f_chk11">
+                                        <label for="f_chk11">수소</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //연료 -->
+
+                    <div class="opt_box">
+                        <p class="ds_tit">색상</p>
+
+                        <div class="chkbox all_chk">
+                            <input type="checkbox" name="" id="all_chk_c">
+                            <label for="all_chk_c">전체선택</label>
+                        </div>
+
+                        <div class="ds_con">
+                            <div class="col4_wrap">
+                                <div class="col4">
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk01">
+                                        <label for="c_chk01" class="bg_red">빨강</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk02">
+                                        <label for="c_chk02" class="bg_silver">은색</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk03">
+                                        <label for="c_chk03" class="bg_orange">주황</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk04">
+                                        <label for="c_chk04" class="bg_yellow">노랑</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk05">
+                                        <label for="c_chk05" class="bg_green">초록</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk06">
+                                        <label for="c_chk06" class="bg_blue">파랑</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk07">
+                                        <label for="c_chk07" class="bg_purple">보라</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk08">
+                                        <label for="c_chk08" class="bg_pink">분홍</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk09">
+                                        <label for="c_chk09" class="bg_light_green">연두</label>
+                                    </div>
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="" id="c_chk10">
+                                        <label for="c_chk10" class="bg_skyblue">하늘</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //색상 -->
+                </div>
+
+
+            </div>
+
+            <div class="btn_box fixed">
+                <a href="#" class="btn"><span>취소</span></a>
+                <a href="#" class="btn blue"><span>검색</span></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Container -->
+</div>
+</body>
+</html>
