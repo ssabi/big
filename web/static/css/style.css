@@ -38,11 +38,11 @@
 .form_wrap .select_wrap + .select_wrap{margin-left:20px;}
 .form_wrap .select_wrap + .btn_submit{margin-left:20px;}
 .form_wrap .btn_select{position:relative;float:left;width:258px;padding:0 18px;height:40px;border:2px solid #bfbfbf;border-radius:19px;text-align:left;}
-.form_wrap .btn_select:after{content:'';display:block;position:absolute;top:8px;right:17px;width:12px;height:12px;border-right:1px solid #000;border-bottom:1px solid #000;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+.form_wrap .btn_select:after{content:'';display:block;position:absolute;top:8px;right:17px;width:12px;height:12px;border-right:1px solid #000;border-bottom:1px solid #000;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);}
 .form_wrap .btn_select.active{}
 .form_wrap .btn_select.active:after{}
 .form_wrap .btn_select.on{background-color:#ddd;}
-.form_wrap .btn_select.on:after{top:16px;transform:rotate(-135deg);-webkit-transform:rotate(-135deg);}
+.form_wrap .btn_select.on:after{top:16px;transform:rotate(-135deg);-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);}
 .form_wrap .btn_select + .btn_select{margin-left:20px;}
 .form_wrap .btn_select + .btn_submit{margin-left:20px;}
 .form_wrap .btn_submit{float:right;width:116px;height:40px;border-radius:19px;font-size:28px;line-height:30px;text-align:center;color:#fff;}
@@ -121,7 +121,7 @@
 .recom_wrap .swiper-pagination.type02{bottom:0;}
 .recom_wrap .slick-slider{padding-bottom:68px;}
 .recom_wrap .slick-slider .slick-slide{width:235px;margin-right:20px;}
-.recom_wrap .slick-slider .slick-prev, .recom_wrap .slick-slider .slick-next{width:32px;height:32px;left:auto;right:0;top:auto;bottom:26px;transform:none;opacity:1;}
+.recom_wrap .slick-slider .slick-prev, .recom_wrap .slick-slider .slick-next{width:32px;height:32px;left:auto;right:0;top:auto;bottom:26px;transform:none;-ms-transform:none;opacity:1;}
 .recom_wrap .slick-slider .slick-prev:before, .recom_wrap .slick-slider .slick-next:before{content:'';display:block;width:inherit;height:inherit;opacity:1;}
 .recom_wrap .slick-slider .slick-prev{right:64px;}
 .recom_wrap .slick-slider .slick-prev:before{background:url(/static/images/common/btn_prev.png) no-repeat left top;}
@@ -251,7 +251,7 @@
 .recom_mov_wrap .check_wrap input{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
 .recom_mov_wrap .check_wrap input + label{display:block;position:relative;padding-left:17px;font-weight:700;font-size:12px;line-height:14px;color:#333;letter-spacing:-0.075em;cursor:pointer;}
 .recom_mov_wrap .check_wrap input + label:before{content:'';display:block;position:absolute;left:0;top:-1px;width:14px;height:14px;border:1px solid #ccc;border-radius:3px;}
-.recom_mov_wrap .check_wrap input:checked + label:after{content:'';display:block;position:absolute;left:4px;top:0;width:6px;height:10px;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+.recom_mov_wrap .check_wrap input:checked + label:after{content:'';display:block;position:absolute;left:4px;top:0;width:6px;height:10px;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);}
 .recom_mov_wrap p.align_r{line-height:0;}
 .recom_mov_wrap button{width:53px;height:14px;line-height:14px;border-radius:2px;text-align:center;font-size:11px;letter-spacing:-0.075em;color:#fff;background-color:#848484;vertical-align:top;}
 .recom_mov_wrap .btn_submit{margin-top:9px;width:100%;height:38px;border-radius:0;background-color:#d90001;font-weight:700;font-size:16px;letter-spacing:-0.05em;}
@@ -287,12 +287,12 @@
 .counsel_wrap .check_wrap input{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
 .counsel_wrap .check_wrap input + label{display:block;position:relative;padding-left:25px;font-size:14px;color:#969696;cursor:pointer;}
 .counsel_wrap .check_wrap input + label:before{content:'';display:block;position:absolute;left:0;top:0;width:20px;height:20px;border:1px solid #ccc;border-radius:2px;}
-.counsel_wrap .check_wrap input:checked + label:after{content:'';display:block;position:absolute;left:6px;top:2px;width:8px;height:12px;border-right:2px solid #000;border-bottom:2px solid #000;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+.counsel_wrap .check_wrap input:checked + label:after{content:'';display:block;position:absolute;left:6px;top:2px;width:8px;height:12px;border-right:2px solid #000;border-bottom:2px solid #000;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);}
 .counsel_wrap button{float:left;width:70px;height:20px;margin-left:9px;text-align:center;font-size:14px;color:#fff;background-color:#848484;border-radius:2px;}
 .counsel_wrap .btn_submit{clear:both;position:absolute;left:-1px;right:-1px;bottom:-1px;float:none;margin:0;width:calc(100% + 2px);height:44px;line-height:44px;font-weight:700;font-size:18px;color:#fff;background-color:#0c5dd7;border-radius:0;}
 .counsel_wrap .title04{position:relative;padding-top:23px;height:58px;font-size:18px;color:#0c5dd7;}
 .counsel_wrap .title04 a{display:block;position:absolute;right:0;top:22px;padding:4px 0;min-width:58px;height:20px;border:1px solid #ccc;font-weight:700;font-size:12px;line-height:100%;color:#434343;letter-spacing:-0.025em;text-align:center;}
-.counsel_wrap .title04 a:after{content:'';display:inline-block;margin:-2px 0 0 6px;width:6px;height:6px;border-right:1px solid #434343;border-bottom:1px solid #434343;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);vertical-align:middle; text-overflow: ellipsis;}
+.counsel_wrap .title04 a:after{content:'';display:inline-block;margin:-2px 0 0 6px;width:6px;height:6px;border-right:1px solid #434343;border-bottom:1px solid #434343;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);vertical-align:middle; text-overflow: ellipsis;}
 .counsel_wrap .table_wrap{margin-top:10px;}
 .counsel_wrap .table_wrap table{width:100%;table-layout:fixed;font-weight:700;font-size:13px;color:#737373;}
 .counsel_wrap .table_wrap thead th{padding:0 6px;font-size:14px;color:#464646;text-align:center;border-bottom:1px solid #ccc;}
