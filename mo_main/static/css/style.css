@@ -17,10 +17,10 @@
 
 /* Column */
 .colbox{display:flex;flex-wrap:wrap;}
-.colbox .item{width:33.33vw;height:33.33vw;}
+.colbox .item{/*width:33.33vw;*/width:33.33%;height:33.33vw;}
 .colbox .item:nth-child(odd){background-color:#1b1b1b;}
 .colbox .item:nth-child(even){background-color:#303030;}
-.colbox .item a{display:flex;width:inherit;height:inherit;color:#fff;flex-direction:column;justify-content:center;align-items:center;}
+.colbox .item a{display:flex;width:100%;height:inherit;color:#fff;flex-direction:column;justify-content:center;align-items:center;}
 .colbox .item a .icon{display:block;width:13.89vw;height:7.08vw;}
 .colbox .item a .ico_col01{background:url(/static/images/icon/ico_col01.png) no-repeat left top;background-size:100%;}
 .colbox .item a .ico_col02{background:url(/static/images/icon/ico_col02.png) no-repeat left top;background-size:100%;}

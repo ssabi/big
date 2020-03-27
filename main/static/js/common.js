@@ -22,14 +22,18 @@ $(document).ready(function(){
             console.log("leftOffsetTop = "+leftOffsetTop);
 
             if(scrollTop >= leftOffsetTop - 10){
-                $leftSide.addClass("fixed");
+                //$leftSide.addClass("fixed");
+                $leftSide.css("top", scrollTop - leftOffsetTop + 20 + "px");
             }else{
-                $leftSide.removeClass("fixed");
+                //$leftSide.removeClass("fixed");
+                $leftSide.css("top", "10px");
             }
             if(scrollTop >= rightOffsetTop - 10){
-                $rightSide.addClass("fixed");
+                //$rightSide.addClass("fixed");
+                $rightSide.css("top", scrollTop - rightOffsetTop + 20  + "px");
             }else{
-                $rightSide.removeClass("fixed");
+                //$rightSide.removeClass("fixed");
+                $rightSide.css("top", "10px");
             }
         }
     });
