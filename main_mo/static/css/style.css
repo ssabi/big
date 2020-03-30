@@ -30,7 +30,7 @@
 .colbox .item a .ico_col06{background:url(/static/images/icon/ico_col06.png) no-repeat left top;background-size:100%;}
 .colbox .item a p{margin-top:1.94vw;font-weight:700;font-size:2.78vw;letter-spacing:-0.02em;}
 
-/* 빠른 상담 */
+/* Quick Consultation */
 .quick{padding:0 0.69vw;}
 .quick .radio_group{overflow:hidden;}
 .quick .radio_wrap{position:relative;float:left;width:33%;height:4.58vw;}
@@ -52,13 +52,31 @@
 .quick .btn_submit{width:100%;height:4.72vw;background-color:#12284c;font-weight:700;font-size:2.22vw;color:#fff;text-align:center;}
 
 /* Review List */
-.review_wrap{overflow:hidden;padding:0 1.53vw 0 1.39vw;}
-.review_wrap ul{overflow:hidden;margin-top:-0.69vw;}
-.review_wrap ul li{float:left;width:33.33%;padding:0.69vw 0.28vw 0 0.42vw;/*width:31.67vw;margin:0 0.69vw 0.69vw 0;*/}
+.review_wrap{overflow:hidden;padding:0 1.25vw;}
+.review_wrap ul{overflow:hidden;margin-top:-0.83vw;}
+.review_wrap ul li{float:left;padding:0.83vw 0.42vw 0;width:33.33%;/*width:31.67vw;margin:0 0.69vw 0.69vw 0;*/}
 .review_wrap ul li a{display:block;overflow:hidden;border:0.14vw solid #e5e5e5;border-radius:2.78vw;}
 .review_wrap ul li span{display:block;}
 .review_wrap ul li span img{width:100%;height:24.03vw;}
 .review_wrap ul li p{overflow:hidden;margin:2.08vw 1.67vw 1.81vw;height:5.56vw;font-size:2.5vw;line-height:2.78vw;color:#373737;}
+
+/* Recommended List */
+.recom_list_wrap{overflow:hidden;padding:0 1.25vw;}
+.recom_list_wrap + * {margin-top:5.56vw;}
+.recom_list_wrap > div{overflow:hidden;margin-top:-0.83vw;}
+.recom_list_wrap .item{float:left;padding:0.83vw 0.42vw 0;width:33.33%;min-height:27.92vw;}
+.recom_list_wrap .item a{display:block;overflow:hidden;width:100%;min-height:inherit;border:0.14vw solid #e5e5e5;border-radius:2.78vw;}
+.recom_list_wrap .item .img{display:block;overflow:hidden;height:23.33vw;}
+.recom_list_wrap .item .img img{width:100%;height:23.33vw;}
+.recom_list_wrap .item .info{padding:1.39vw 1.39vw 0;}
+.recom_list_wrap .item .info em{display:block;overflow:hidden;height:6.94vw;font-weight:700;font-size:2.22vw;line-height:3.33vw;letter-spacing:-0.05em;color:#333;}
+.recom_list_wrap .item .info ul{overflow:hidden;margin-top:2.78vw;}
+.recom_list_wrap .item .info ul li{position:relative;float:left;margin-left:0.56vw;padding-left:0.69vw;font-size:1.67vw;letter-spacing:-0.05em;color:#999;}
+.recom_list_wrap .item .info ul li:before{content:'';display:block;position:absolute;left:0;top:50%;margin-top:-0.97vw;width:0.14vw;height:1.67vw;background-color:#999;}
+.recom_list_wrap .item .info ul li:first-child{margin-left:0;padding-left:0;}
+.recom_list_wrap .item .info ul li:first-child:before{display:none;}
+.recom_list_wrap .item .price{padding-bottom:0.97vw;margin-top:2.50vw;font-weight:700;font-size:1.81vw;color:#999;}
+.recom_list_wrap .item .price span{margin-right:0.42vw;font-size:2.78vw;color:#e61b1b;}
 
 /* Banner */
 .banner{padding:0 0.69vw;}
@@ -66,5 +84,5 @@
 .banner a{display:block;}
 .banner a + a{margin-top:0.97vw;}
 
-/* 찾아오시는 길 */
+/* Directions */
 .map_area{position:relative;}
