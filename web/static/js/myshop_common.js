@@ -8,45 +8,29 @@ $(document).ready(function(){
     var $visual = $(".visual_section");
     var $visualHeight = $visual.length > 0 ? $visual.outerHeight() : 0;
     var $btnToTop = $("#to_top");
+    var speed = 250;
     var $scrollTop = $(window).scrollTop();
-    /*
-    if($scrollTop > $visualHeight + $headerHeight - 20){
-        //$leftSide.addClass("fixed");
-        //$rightSide.addClass("fixed");
-        $leftSide.css("top", scrollTop - $leftSideTop + "px");
-        $rightSide.css("top", scrollTop - $rightSideTop + "px");
-    }else{
-        //$leftSide.removeClass("fixed");
-        //$rightSide.removeClass("fixed");
-        $leftSide.css("top", "0");
-        $rightSide.css("top", "0");
-    }
-    */
-    $leftSide.css("top", $visualHeight);
-    $rightSide.css("top", $visualHeight);
+
     $leftSide.show();
     $rightSide.show();
-
-    var $leftSideTop = $leftSide.length > 0 ? $leftSide.offset().top : 0;
-    var $rightSideTop = $rightSide.length > 0 ? $rightSide.offset().top : 0;
+    if($scrollTop >= $headerHeight + $visualHeight - 10){
+        $leftSide.css("top", $scrollTop - $headerHeight + 10);
+        $rightSide.css("top", $scrollTop - $headerHeight + 10);
+    }else{
+        $leftSide.css("top", $visualHeight);
+        $rightSide.css("top", $visualHeight);
+    }
 
     $(window).on({
         scroll : function(){
             var scrollTop = $(window).scrollTop();
 
-            if(scrollTop >= $leftSideTop - 10){
-                //$leftSide.addClass("fixed");
-                $leftSide.css("top", scrollTop - $headerHeight + 10 + "px");
+            if(scrollTop >= $headerHeight + $visualHeight - 10){
+                $leftSide.stop().animate({"top" : scrollTop - $headerHeight + 10}, speed);
+                $rightSide.stop().animate({"top" : scrollTop - $headerHeight + 10}, speed);
             }else{
-                //$leftSide.removeClass("fixed");
-                $leftSide.css("top", $visualHeight);
-            }
-            if(scrollTop >= $rightSideTop - 10){
-                //$rightSide.addClass("fixed");
-                $rightSide.css("top", scrollTop - $headerHeight + 10  + "px");
-            }else{
-                //$rightSide.removeClass("fixed");
-                $rightSide.css("top", $visualHeight);
+                $leftSide.stop().animate({"top" : $visualHeight}, speed);
+                $rightSide.stop().animate({"top" : $visualHeight}, speed);
             }
         }
     });
